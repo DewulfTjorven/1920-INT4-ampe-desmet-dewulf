@@ -1,12 +1,10 @@
 import React from "react";
 
-import Sidebar from "./containers/Sidebar/Sidebar";
-import Content from "./containers/Content/Content";
+import Content from "./containers/Header/Header";
 
 function App() {
   return (
     <>
-      <Sidebar />
       <Content />
     </>
   );
