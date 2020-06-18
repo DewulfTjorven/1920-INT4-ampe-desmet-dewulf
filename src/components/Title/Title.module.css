@@ -1,0 +1,21 @@
+@font-face {
+  font-family: Cubano;
+  src: url(../../fonts/cubano/cubano.woff);
+}
+
+.title{
+  font-size: 4.8rem;
+  font-family: Cubano;
+  color: white;
+}
+
+.span{
+  color: #FEC74F;
+}
+
+.text{
+  color: white;
+  padding-top: 2rem;
+  line-height: 2rem;
+  opacity: 0.6;
+}

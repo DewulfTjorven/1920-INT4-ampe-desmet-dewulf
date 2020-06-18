@@ -45,11 +45,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#root {
-  display: grid;
-  grid-template-columns: 1.64fr 3fr;
-  height: 100vh;
-}
 
 a {
   text-decoration: none;

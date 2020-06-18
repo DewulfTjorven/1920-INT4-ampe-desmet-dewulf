@@ -1,13 +1,18 @@
 import React from "react";
 // import { ROUTES } from "../../consts";
+import Nav from "./Nav/Nav";
+import HeaderContainer from "./HeaderContainer/HeaderContainer";
 
-import Test from "../../components/Test/Test.js";
 
 
+import style from "./Header.module.css";
 
 const Header = () => {
   return (
-    <Test />
+    <div className={style.container}>
+      <Nav />
+      <HeaderContainer />
+    </div>
   );
 };
 

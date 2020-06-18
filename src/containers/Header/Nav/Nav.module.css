@@ -1,0 +1,38 @@
+.nav{
+  max-width: 120rem;
+  height: 8rem;
+  margin: auto;
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.nav__item__left{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav__item__middle{
+  display: flex;
+  justify-content: center;
+
+}
+
+.nav__item__right{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 4rem;
+}
+
+.nav__item__right p{  
+  padding-right: 2rem;
+  color: white;
+}
+
+.navList li{
+  display: inline;
+  padding: 1.2rem;
+  color: white;
+}
