@@ -6,7 +6,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .nav__item__left{
@@ -24,6 +23,7 @@
   display: flex;
   justify-content: flex-end;
   padding-right: 4rem;
+  align-items: center;
 }
 
 .nav__item__right p{  
@@ -35,4 +35,21 @@
   display: inline;
   padding: 1.2rem;
   color: white;
+}
+
+.navList a{
+  color: white;
+}
+
+.navList a:hover{
+  font-weight: bold;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px #FEC74F;
+}
+
+.nav__item__right a{
+  display: inline;
+  padding: 1.2rem;
+  color: white;
+  opacity: 0.6;
 }

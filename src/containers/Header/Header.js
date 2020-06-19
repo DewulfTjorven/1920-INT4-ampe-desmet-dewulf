@@ -2,6 +2,8 @@ import React from "react";
 // import { ROUTES } from "../../consts";
 import Nav from "./Nav/Nav";
 import HeaderContainer from "./HeaderContainer/HeaderContainer";
+import NavBottom from "./NavBottom/NavBottom";
+
 
 
 
@@ -12,6 +14,7 @@ const Header = () => {
     <div className={style.container}>
       <Nav />
       <HeaderContainer />
+      <NavBottom />
     </div>
   );
 };

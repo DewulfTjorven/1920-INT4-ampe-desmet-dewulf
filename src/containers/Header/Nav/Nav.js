@@ -1,5 +1,7 @@
 import React from "react";
 // import { ROUTES } from "../../consts";
+import { NavLink } from "react-router-dom";
+import { ROUTES } from "../../../consts";
 import Button from "../../../components/Button/Button";
 
 
@@ -12,17 +14,29 @@ const Nav = () => {
     <div className={style.nav}>
       <div className={`${style.nav__item} ${style.nav__item__left}`}>
         <ul className={style.navList}>
-          <li>Home</li>
-          <li>Travel</li>
-          <li>Pilots</li>
-          <li>Map</li>
+          <li><NavLink className={style.add} to={ROUTES.addgroup}>
+          Home
+          </NavLink>
+          </li>
+          <li><NavLink className={style.add} to={ROUTES.addgroup}>
+          Travel
+          </NavLink>
+          </li>
+          <li><NavLink className={style.add} to={ROUTES.addgroup}>
+          Map
+          </NavLink>
+          </li>
         </ul>
       </div>
       <div className={`${style.nav__item} ${style.nav__item__middle}`}>
         <img src={logo} width="40px" height="40px" alt="drone-logo"></img>
       </div>
       <div className={`${style.nav__item} ${style.nav__item__right}`}>
-        <p>Sign in</p>
+        <ul>
+        <li><NavLink className={style.add} to={ROUTES.addgroup}>
+            Sign in
+        </NavLink></li>
+        </ul>
         <Button cta="Create an account"/>
       </div>
     </div>
