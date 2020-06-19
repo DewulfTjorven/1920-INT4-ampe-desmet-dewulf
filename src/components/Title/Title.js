@@ -1,9 +1,11 @@
-import React from "react";
+import React from 'react';
 // import { ROUTES } from "../../consts";
 
 
 
 import style from "./Title.module.css";
+
+
 
 const Title = (props) => {
   return (

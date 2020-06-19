@@ -1,0 +1,21 @@
+.card{
+  width: 25rem;
+  height: 35rem;
+  background-color: white;
+  border-radius: .2rem;
+  padding: 2.4rem;
+}
+
+@font-face {
+  font-family: Cubano;
+  src: url(../../../fonts/cubano/cubano.woff);
+}
+
+
+.title{
+  font-size: 2.2rem;
+  padding-top: 1rem;
+  font-family: Cubano;
+  color: #214557;
+}
+
