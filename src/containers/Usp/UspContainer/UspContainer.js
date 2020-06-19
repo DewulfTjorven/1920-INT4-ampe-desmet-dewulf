@@ -8,6 +8,11 @@ import Card3 from "../Card3/Card3";
 
 import style from "./UspContainer.module.css";
 
+import island1 from "../../../img/island1.png";
+import island2 from "../../../img/island2.png";
+
+
+
 
 const UspContainer = () => {
   return (
@@ -17,6 +22,8 @@ const UspContainer = () => {
         <Card2 />
         <Card3 />
       </div>
+      <img src={island1} alt="drone-logo" className={style.island1}></img>
+      <img src={island2} alt="drone-logo" className={style.island2}></img>
     </div>
   );
 };

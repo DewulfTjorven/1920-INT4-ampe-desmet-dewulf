@@ -19,24 +19,15 @@ const Card1 = () => {
         <div>
           <div className={style.content}>
             <h3>01</h3>
-            <p>Pick a location
-              <br></br>
-              <strong>or discover a new one</strong>
-            </p>
+            <p>Add spots to the map</p>
           </div>
           <div className={style.content}>
             <h3>02</h3>
-            <p>Pick a location
-              <br></br>
-              <strong>or discover a new one</strong>
-            </p>
+            <p>Accept flight invitations and tour for your viewers</p>
           </div>
           <div className={style.content}>
             <h3>03</h3>
-            <p>Pick a location
-              <br></br>
-              <strong>or discover a new one</strong>
-            </p>
+            <p>Earn some cash</p>
           </div>
         </div>
         <div className={style.buttons}>

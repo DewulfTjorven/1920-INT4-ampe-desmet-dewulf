@@ -3,6 +3,7 @@
   height: 80vh;
   margin: auto;
   padding-top: 12rem;
+  position: relative;
 }
 
 .cards{
@@ -11,4 +12,20 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  z-index: 999;
+}
+
+.island1{
+  position: absolute;
+  width: 400px;
+  top: -10rem;
+  right: -35rem;
+  z-index: 999;
+}
+
+.island2{
+  position: absolute;
+  width: 500px;
+  bottom: -20rem;
+  left: -30rem;
 }
