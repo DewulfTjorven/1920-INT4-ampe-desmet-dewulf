@@ -21,32 +21,32 @@ const Sidebar = () => {
         <>
             <nav className={style.container}>
                 <ul className={style.navList}>
-                    <li className={style.navbar_li}><NavLink className={style.navbar_logo} to={ROUTES.dashboard}>
+                    <li className={style.navbar_li}><NavLink className={style.navbar_logo} to={ROUTES.dashboardHome}>
                         <img src={dashboardLogo} alt="Dashboard icon"></img>
                     </NavLink>
                     </li>
-                    <li className={style.navbar_li}><NavLink className={`${style.navbar_link} ${style.navbar_link__active}`} to={ROUTES.dashboard}>
+                    <li className={style.navbar_li}><NavLink activeClassName={style.navbar_link__active} className={`${style.navbar_link}`} to={ROUTES.dashboardHome}>
                         <img src={iconDashboard} width="25px" alt="Dashboard icon"></img>
                         Dashboard
                             </NavLink>
                     </li>
-                    <li className={style.navbar_li}><NavLink className={`${style.navbar_link}`} to={ROUTES.dashboard}>
+                    <li className={style.navbar_li}><NavLink activeClassName={style.navbar_link__active} className={`${style.navbar_link}`} to={ROUTES.dashboardTrips}>
                         <img src={iconTrips} width="50px" alt="My trips icon"></img>
                         My Trips
                             </NavLink>
                     </li>
-                    <li className={style.navbar_li}><NavLink className={`${style.navbar_link}`} to={ROUTES.dashboard}>
+                    <li className={style.navbar_li}><NavLink activeClassName={style.navbar_link__active} className={`${style.navbar_link}`} to={ROUTES.dashboardMap}>
                         <img src={iconMap} width="40px" alt="Map icon"></img>
                         Map
                             </NavLink>
                     </li>
-                    <li className={style.navbar_li}><NavLink className={`${style.navbar_link}`} to={ROUTES.dashboard}>
+                    <li className={style.navbar_li}><NavLink activeClassName={style.navbar_link__active} className={`${style.navbar_link}`} to={ROUTES.dashboardCockpit}>
                         <img src={iconCockpit} width="30px" alt="Pilot cockpit icon"></img>
                         Pilot Cockpit
                             </NavLink>
                     </li>
                     <li className={style.navbar_li}>
-                        <NavLink className={`${style.navbar_link} ${style.navbar_link_create}`} to={ROUTES.dashboard}>
+                        <NavLink className={`${style.navbar_link} ${style.navbar_link_create}`} to={ROUTES.dashboardMap}>
                             Create trip
                             <img src={uiArrow} width="20px" alt="Arrow icon"></img>
                         </NavLink>

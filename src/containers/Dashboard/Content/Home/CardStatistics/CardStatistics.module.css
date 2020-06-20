@@ -1,0 +1,25 @@
+.dashboard_statistics{
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+}
+
+.statistic_container{
+    text-align: center;
+    border-right: 0.3rem solid #FEC74F;
+}
+
+.statistic__name{
+    font-size: 1.5rem;
+}
+
+.statistic__name+p{
+    font-family: Cubano;
+    font-size: 3.5rem;
+    color: #FEC74F;
+}
+
+.minutes{
+    color: #002A3F;
+    font-size: 2rem;
+}
