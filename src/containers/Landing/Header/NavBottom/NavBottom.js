@@ -3,7 +3,7 @@ import React from "react";
 
 
 import style from "./NavBottom.module.css";
-import arrow from "../../../img/arrow.png";
+import arrow from "../../../../img/arrow.png";
 
 
 

@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 
 // import { ROUTES } from "../../consts";
 import Card1 from "../Card1/Card1";
@@ -8,8 +8,8 @@ import Card3 from "../Card3/Card3";
 
 import style from "./UspContainer.module.css";
 
-import island1 from "../../../img/island1.png";
-import island2 from "../../../img/island2.png";
+import island1 from "../../../../img/island1.png";
+import island2 from "../../../../img/island2.png";
 
 
 

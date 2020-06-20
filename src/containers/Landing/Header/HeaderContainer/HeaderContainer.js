@@ -1,11 +1,11 @@
-import React , {useEffect} from 'react';
+import React, { useEffect } from 'react';
 
 // import { ROUTES } from "../../consts";
-import Title from "../../../components/Title/Title";
+import Title from "../../../../components/Title/Title";
 
 
 import style from "./HeaderContainer.module.css";
-import hero from "../../../img/hero.png";
+import hero from "../../../../img/hero.png";
 
 
 const HeaderContainer = () => {

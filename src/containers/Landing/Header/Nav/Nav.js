@@ -1,29 +1,29 @@
 import React from "react";
 // import { ROUTES } from "../../consts";
 import { NavLink } from "react-router-dom";
-import { ROUTES } from "../../../consts";
-import Button from "../../../components/Button/Button";
+import { ROUTES } from "../../../../consts";
+import Button from "../../../../components/Button/Button";
 
 
 
 import style from "./Nav.module.css";
-import logo from "../../../img/logo.png";
+import logo from "../../../../img/logo.png";
 
 const Nav = () => {
   return (
     <div className={style.nav}>
       <div className={`${style.nav__item} ${style.nav__item__left}`}>
         <ul className={style.navList}>
-          <li><NavLink className={style.add} to={ROUTES.addgroup}>
-          Home
+          <li><NavLink className={style.add} to={ROUTES.dashboard}>
+            Home
           </NavLink>
           </li>
-          <li><NavLink className={style.add} to={ROUTES.addgroup}>
-          Travel
+          <li><NavLink className={style.add} to={ROUTES.dashboard}>
+            Travel
           </NavLink>
           </li>
-          <li><NavLink className={style.add} to={ROUTES.addgroup}>
-          Map
+          <li><NavLink className={style.add} to={ROUTES.dashboard}>
+            Map
           </NavLink>
           </li>
         </ul>
@@ -33,11 +33,11 @@ const Nav = () => {
       </div>
       <div className={`${style.nav__item} ${style.nav__item__right}`}>
         <ul>
-        <li><NavLink className={style.add} to={ROUTES.addgroup}>
+          <li><NavLink className={style.add} to={ROUTES.dashboard}>
             Sign in
         </NavLink></li>
         </ul>
-        <Button cta="Create an account"/>
+        <Button cta="Create an account" />
       </div>
     </div>
   );

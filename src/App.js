@@ -1,13 +1,22 @@
 import React from "react";
 
-import Header from "./containers/Header/Header";
-import Usp from "./containers/Usp/Usp";
+import Landing from "./containers/Landing/Landing";
+import Dashboard from "./containers/Dashboard/Dashboard";
+
+import { Switch, Route } from "react-router-dom";
+import { ROUTES } from "./consts";
 
 function App() {
   return (
     <>
-      <Header />
-      <Usp />
+      <Switch>
+        <Route exact path={ROUTES.home}>
+          <Landing />
+        </Route>
+        <Route path={ROUTES.dashboard}>
+          <Dashboard />
+        </Route>
+      </Switch>
 
     </>
   );
