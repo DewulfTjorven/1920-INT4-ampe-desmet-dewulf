@@ -1,55 +1,44 @@
-.nav{
-  max-width: 120rem;
-  height: 8rem;
-  margin: auto;
-  padding-top: 4rem;
+.nav {
+  padding: 5rem 15rem 0 15rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav__item__left{
+.nav__item {
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
   display: flex;
-  justify-content: flex-start;
-}
-
-.nav__item__middle{
-  display: flex;
-  justify-content: center;
-
-}
-
-.nav__item__right{
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 4rem;
+  color: white;
   align-items: center;
+  line-height: 2.5rem;
+  letter-spacing: .05rem;
 }
 
-.nav__item__right p{  
-  padding-right: 2rem;
+.nav__item__links {
+  display: flex;
+  /*margin-top: .8rem;*/
+}
+
+.nav__item__link {
+  margin-right: 5rem;
   color: white;
 }
 
-.navList li{
-  display: inline;
-  padding: 1.2rem;
-  color: white;
+.nav__item__link__selected {
+  font-family: AvenirBlack, Arial, Helvetica, sans-serif;
 }
 
-.navList a{
-  color: white;
+.nav__logo {
+
 }
 
-.navList a:hover{
-  font-weight: bold;
-  padding-bottom: 1rem;
-  border-bottom: solid 1px #FEC74F;
+.signin {
+  font-family: AvenirBlack, Arial, Helvetica, sans-serif;
+  color: white;
+  text-decoration: none;
 }
 
-.nav__item__right a{
-  display: inline;
-  padding: 1.2rem;
-  color: white;
-  opacity: 0.6;
+.signin__or {
+  margin: 0 2rem
 }

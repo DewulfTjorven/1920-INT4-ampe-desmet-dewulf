@@ -1,18 +1,17 @@
 @value tokens: "./tokens.module.css";
 @value fontSizeLarge, fontSizeMedium, background, spacer1 from tokens;
 
-.title1 {
-  font-size: fontSizeLarge;
-  font-weight: bold;
+@font-face {
+  font-family: Cubano;
+  src: url(../../fonts/cubano/cubano.woff), url(../../fonts/cubano/cubano.woff2);
 }
 
-.subtitle {
-  font-size: fontSizeMedium;
-  background-color: background;
-  padding: spacer1;
+@font-face {
+  font-family: Avenir;
+  src: url(../../../fonts/avenir/avenir.woff), url(../../../fonts/avenir/avenir.woff2);
 }
 
-.largeText {
-  font-size: fontSizeMedium;
-  font-weight: bold;
+@font-face {
+  font-family: AvenirBlack;
+  src: url(../../../fonts/avenir/avenir-black.woff), url(../../../fonts/avenir/avenir-black.woff2);
 }

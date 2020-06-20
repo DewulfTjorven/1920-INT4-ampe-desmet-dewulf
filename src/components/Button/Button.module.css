@@ -1,14 +1,11 @@
-@font-face {
-  font-family: Cubano;
-  src: url(../../fonts/cubano/cubano.woff);
-}
-
 .button {
+  font-size: 1.8rem;
   border: none;
-  border-radius: 0.2rem;
+  border-radius: .3rem;
+  width: 24.5rem;
   background-color: #FEC74F;
   padding: 1rem;
-  font-family: Cubano;
+  font-family: Cubano, Arial, Helvetica, sans-serif;
   color: #214557;
 }
 

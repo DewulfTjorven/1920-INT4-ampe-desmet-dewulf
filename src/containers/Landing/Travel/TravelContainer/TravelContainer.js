@@ -6,7 +6,7 @@ import Card2 from "../Card2/Card2";
 import Card3 from "../Card3/Card3";
 
 
-import style from "./UspContainer.module.css";
+import style from "./TravelContainer.module.css";
 
 import island1 from "../../../../img/island1.png";
 import island2 from "../../../../img/island2.png";
@@ -14,7 +14,7 @@ import island2 from "../../../../img/island2.png";
 
 
 
-const UspContainer = () => {
+const TravelContainer = () => {
   return (
     <div className={style.container}>
       <div className={style.cards}>
@@ -28,4 +28,4 @@ const UspContainer = () => {
   );
 };
 
-export default UspContainer;
+export default TravelContainer;

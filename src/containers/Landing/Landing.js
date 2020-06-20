@@ -2,17 +2,16 @@ import React from "react";
 // import { ROUTES } from "../../consts";
 
 import Header from "./Header/Header";
-import Usp from "./Usp/Usp";
+import Travel from "./Travel/Travel";
 
 
 const Landing = () => {
-    return (
-        <>
-            <Header />
-            <Usp />
-        </>
-
-    );
+  return (
+    <>
+      <Header />
+      <Travel />
+    </>
+  );
 };
 
 export default Landing;

@@ -11,13 +11,16 @@ const NavBottom = () => {
   return (
     <div className={style.container}>
       <div className={style.usp__list}>
-        <ul>
-          <li><span className={style.span}>01 </span>Explore</li>
-          <li><span className={style.span}>02 </span>Discover</li>
-          <li><span className={style.span}>03 </span>Interact</li>
+        <ul className={style.usp__list__items}>
+          <li className={style.usp__list__item}><span className={`${style.usp__list__item__number} ${style.usp__list__item__number__selected}`}>01 </span>Explore</li>
+          <li className={style.usp__list__item}><span className={style.usp__list__item__number}>02 </span>Discover</li>
+          <li className={style.usp__list__item}><span className={style.usp__list__item__number}>03 </span>Interact</li>
         </ul>
+        <div className={style.line}></div>
       </div>
-      <img src={arrow} width="15px" alt="arrow" className={style.arrow}></img>
+      <div className={style.arrow}>
+        <img src={arrow} width="18px" height="62px" alt="arrow"></img>
+      </div>
     </div>
   );
 };

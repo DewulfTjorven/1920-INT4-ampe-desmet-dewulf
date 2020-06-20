@@ -4,9 +4,6 @@ import Nav from "./Nav/Nav";
 import HeaderContainer from "./HeaderContainer/HeaderContainer";
 import NavBottom from "./NavBottom/NavBottom";
 
-
-
-
 import style from "./Header.module.css";
 
 const Header = () => {

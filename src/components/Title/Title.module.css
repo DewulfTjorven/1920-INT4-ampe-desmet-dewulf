@@ -1,21 +1,24 @@
-@font-face {
-  font-family: Cubano;
-  src: url(../../fonts/cubano/cubano.woff);
+.container {
+  width: 57.5rem;
 }
 
-.title{
-  font-size: 4.8rem;
-  font-family: Cubano;
+.title {
+  font-size: 5rem;
+  letter-spacing: .1rem;
+  font-family: Cubano, Arial, Helvetica, sans-serif;
   color: white;
+  width: 57.5rem;
 }
 
-.span{
+.span {
   color: #FEC74F;
 }
 
-.text{
+.text {
+  font-family: Avenir, Arial, Helvetica, sans-serif;
   color: white;
-  padding-top: 2rem;
-  line-height: 2rem;
-  opacity: 0.6;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: .05rem;
 }
