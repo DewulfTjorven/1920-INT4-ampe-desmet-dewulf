@@ -1,12 +1,12 @@
 import React from "react";
 
 
-const Home = () => {
+const Cockpit = () => {
     return (
         <>
-            <p>Home</p>
+            <p>Cockpit</p>
         </>
     );
 };
 
-export default Home;
+export default Cockpit;

@@ -1,8 +1,11 @@
 import React from "react";
 
 import Home from "./Home/Home";
+import Trips from "./Trips/Trips";
+import Map from "./Map/Map";
+import Cockpit from "./Cockpit/Cockpit";
 
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import { ROUTES } from "../../../consts";
 
 
@@ -10,10 +13,20 @@ const Content = () => {
     return (
         <>
             <Switch>
-                <Route exact path={ROUTES.home}>
+                <Route exact path={ROUTES.dashboard}>
+                    <Redirect to={ROUTES.dashboardHome} />
+                </Route>
+                <Route exact path={ROUTES.dashboardHome}>
                     <Home />
                 </Route>
-                <Route path={ROUTES.dashboard}>
+                <Route path={ROUTES.dashboardTrips}>
+                    <Trips />
+                </Route>
+                <Route path={ROUTES.dashboardMap}>
+                    <Map />
+                </Route>
+                <Route path={ROUTES.dashboardCockpit}>
+                    <Cockpit />
                 </Route>
             </Switch>
         </>

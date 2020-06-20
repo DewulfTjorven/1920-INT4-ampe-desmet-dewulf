@@ -1,12 +1,12 @@
 import React from "react";
 
 
-const Home = () => {
+const Map = () => {
     return (
         <>
-            <p>Home</p>
+            <p>Map</p>
         </>
     );
 };
 
-export default Home;
+export default Map;
