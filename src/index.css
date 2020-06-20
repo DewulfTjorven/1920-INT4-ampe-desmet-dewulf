@@ -36,6 +36,10 @@ html {
   outline: none;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-size: 1.4rem;
   margin: 0;
@@ -49,3 +53,4 @@ body {
 a {
   text-decoration: none;
 }
+
