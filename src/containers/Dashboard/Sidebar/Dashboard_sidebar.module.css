@@ -1,5 +1,22 @@
 .container{
-    width: 28rem;
+    width: 30rem;
     background-color: #002A3F;
     color: white;
+}
+
+.navbar_li{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.navbar_li__active{
+    background-color: #0E3447;
+    border-left: solid 0.3rem #FEC74F;
+}
+
+.navbar_li>img{
+    padding-bottom: 0.8rem;
 }

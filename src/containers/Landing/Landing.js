@@ -7,8 +7,11 @@ import Usp from "./Usp/Usp";
 
 const Landing = () => {
     return (
-        <Header />,
-        <Usp />
+        <>
+            <Header />
+            <Usp />
+        </>
+
     );
 };
 
