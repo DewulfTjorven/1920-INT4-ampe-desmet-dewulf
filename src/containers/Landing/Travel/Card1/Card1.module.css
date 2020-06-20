@@ -1,0 +1,53 @@
+.card {
+  background-color: white;
+  border-radius: .3rem;
+  width: 30rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, .4);
+  color: #214557;
+  padding: 5rem 2.5rem
+}
+
+.title {
+  margin: 1rem 0 1.3rem;
+  font-family: Cubano, Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+}
+
+.line {
+  height: .2rem;
+  width: 4.5rem;
+  background-color: #FEC74F;
+  margin-bottom: 1.3rem;
+}
+
+.number {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.content__bold {
+  font-weight: bold;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.signin {
+  padding-top: 1.5rem;
+}
+
+.signin__link {
+  color: #214557;
+  font-weight: bold;
+}
+
+.text__wrapper {
+  margin-left: 1rem;
+}

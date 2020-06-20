@@ -8,10 +8,5 @@
 
 @font-face {
   font-family: Avenir;
-  src: url(../../../fonts/avenir/avenir.woff), url(../../../fonts/avenir/avenir.woff2);
-}
-
-@font-face {
-  font-family: AvenirBlack;
-  src: url(../../../fonts/avenir/avenir-black.woff), url(../../../fonts/avenir/avenir-black.woff2);
+  src: url(../fonts/avenir/avenir.woff), url(../fonts/avenir/avenir.woff2);
 }

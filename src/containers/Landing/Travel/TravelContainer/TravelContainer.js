@@ -18,12 +18,20 @@ const TravelContainer = () => {
   return (
     <div className={style.container}>
       <div className={style.cards}>
-        <Card1 />
-        <Card2 />
-        <Card3 />
+        <img src={island1} width="678px" height="618px" alt="Island with Colosseum" className={style.island1}></img>
+        <div className={style.card__wrapper}>
+          <div className={style.card__one}>
+            <Card1 />
+          </div>
+          <div className={style.card__two}>
+            <Card2 />
+          </div>
+          <div className={style.card__three}>
+            <Card3 />
+          </div>
+        </div>
+        <img src={island2} width="440px" height="998px" alt="Island with Statue of Liberty" className={style.island2}></img>
       </div>
-      <img src={island1} alt="drone-logo" className={style.island1}></img>
-      <img src={island2} alt="drone-logo" className={style.island2}></img>
     </div>
   );
 };

@@ -1,5 +1,12 @@
 .container {
-  background-image: url(../../../img/Background\ heatmap.jpg);
+  background-image: url(../../../img/bg.jpg);
   width: 100%;
   height: 100vh;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.3;
+}
+
+.content__text {
+  font-weight: bold;
 }

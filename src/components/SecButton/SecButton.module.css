@@ -1,12 +1,13 @@
-.button {
+.secbutton {
   font-size: 1.8rem;
   border: none;
   border-radius: .3rem;
   width: 25rem;
-  background-color: #FEC74F;
+  border: solid .2rem white;
   padding: 1rem;
   font-family: Cubano, Arial, Helvetica, sans-serif;
-  color: #214557;
+  color: white;
   z-index: 1;
+  background-color: rgba(33, 69, 87, .75);;
 }
 
