@@ -1,8 +1,11 @@
 .container{
-  max-width: 120rem;
-  height: 80vh;
-  margin: auto;
+  margin-left: 15rem;
+  margin-top: 7.5rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+
+.hero {
+  margin-top: -15rem;
+  margin-left: -15rem;
 }
