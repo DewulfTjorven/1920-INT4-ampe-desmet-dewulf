@@ -1,0 +1,50 @@
+.container{
+    width: 75%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.title__hidden{
+    display: none;
+}
+
+.welcome_back{
+    font-family: Cubano;
+    font-size: 2.5rem;
+    color: #002A3F;
+    margin-top: 6rem;
+}
+
+.ready{
+    font-family: Cubano;
+    font-size: 5rem;
+    color: #FEC74F;
+}
+
+.span__yellow{
+    color: #FEC74F;
+}
+
+.dashboard_description{
+    color: #002A3F;
+    margin-top: 1.5rem;
+}
+
+.subtitle{
+    font-family: Cubano;
+    font-size: 3rem;
+    color: #002A3F;
+}
+
+.subtitle::after{
+    content: "";
+    display: block;
+    width: 4.2rem;
+    height: 0.3rem;
+    margin-top: 1rem;
+    background-color: #FEC74F;
+}
+
+.log_container{
+    margin-top: 4rem;
+}
