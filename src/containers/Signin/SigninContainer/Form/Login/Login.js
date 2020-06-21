@@ -1,7 +1,5 @@
 import React from "react";
 
-import Button from "../../../../../components/Button/Button"
-
 
 
 import style from "./Login.module.css";
@@ -16,7 +14,7 @@ const Login = () => {
         <input className={style.input} type="email"></input>
         <label className={style.label}>Password</label>
         <input  className={style.input}type="password"></input>
-        <input type="checkbox" placeholder="check me"></input>
+        <input className={style.check} type="checkbox" placeholder="check me"></input> Remember me
         <button className={style.button} type= "submit">Sign in</button>
     </div>
   );

@@ -50,3 +50,10 @@
   font-size: 1.6rem;
 
 }
+
+.names{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+}

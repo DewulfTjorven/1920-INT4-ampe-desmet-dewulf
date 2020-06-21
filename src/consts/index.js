@@ -7,6 +7,7 @@ const ROUTES = {
   dashboardMap: "/dashboard/map",
   dashboardCockpit: "/dashboard/cockpit",
   login: "/login",
+  register: "/register",
   dashboardProfile: { path: "/dashboard/profile", to: "/dashboard/profile" }
 };
 

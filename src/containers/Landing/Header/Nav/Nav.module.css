@@ -1,5 +1,5 @@
 .nav {
-  padding: 5rem 15rem 0 15rem;
+  margin: -6rem 15rem 0 15rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,6 +13,7 @@
   align-items: center;
   line-height: 2.5rem;
   letter-spacing: .05rem;
+
 }
 
 .nav__item__links {
@@ -30,10 +31,14 @@
 }
 
 .nav__logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
 
 }
 
 .signin {
+  z-index: 1;
   font-family: AvenirBlack, Arial, Helvetica, sans-serif;
   color: white;
   text-decoration: none;
@@ -42,3 +47,4 @@
 .signin__or {
   margin: 0 2rem
 }
+
