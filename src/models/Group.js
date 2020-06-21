@@ -29,16 +29,6 @@ class Group {
     !this.users.includes(user) && this.users.push(user);
     !user.groups.includes(user) && user.linkGroup(this);
   }
-
-  get unreadLength() {
-    return this.messages.filter(message => message.unread).length;
-  }
-
-  get lastMessageContent() {
-    return this.messages.length > 0
-      ? this.messages[this.messages.length - 1].content
-      : "";
-  }
 }
 
 decorate(Group, {

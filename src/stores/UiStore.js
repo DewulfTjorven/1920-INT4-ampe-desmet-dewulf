@@ -1,7 +1,8 @@
 import { decorate, observable, action } from "mobx";
 
 class UiStore {
-  constructor() {
+  constructor(rootStore) {
+    this.rootStore = rootStore;
     this.currentUser = undefined;
   }
 

@@ -4,12 +4,17 @@ class User {
   constructor({ id = v4(), name, store, avatar = "" }) {
     this.id = id;
     this.name = name;
-    this.messages = [];
-    this.groups = [];
+
+    //this.messages = [];
+    this.trips = [];
+
+    this.trips = [];
+
     this.avatar = avatar;
     if (!avatar) {
       this.avatar = `https://avatars.dicebear.com/v2/avataaars/${this.id}.svg`;
     }
+
     if (!store) {
       throw new Error("voorzie een store");
     }
@@ -17,13 +22,13 @@ class User {
     this.store.addUser(this);
   }
 
-  linkMessage(message) {
-    !this.messages.includes(message) && this.messages.push(message);
-  }
+  //linkMessage(message) {
+  //  !this.messages.includes(message) && this.messages.push(message);
+  //}
 
-  linkGroup(group) {
-    !this.groups.includes(group) && this.groups.push(group);
-    !group.users.includes(this) && group.linkUser(this);
+  linkTrip(trip) {
+    !this.trips.includes(trip) && this.trips.push(trip);
+    !trip.users.includes(this) && trip.linkUser(this);
   }
 }
 

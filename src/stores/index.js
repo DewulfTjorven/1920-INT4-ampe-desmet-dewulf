@@ -1,11 +1,13 @@
 import UiStore from "./UiStore";
-import DataStore from "./DataStore";
+import UserStore from "./UserStore";
+import TripStore from "./TripStore";
 
-class Stores {
+class RootStore {
   constructor() {
-    this.dataStore = new DataStore();
-    this.uiStore = new UiStore();
+    this.userStore = new UserStore(this);
+    this.tripStore = new TripStore(this);
+    this.uiStore = new UiStore(this);
   }
 }
 
-export default Stores;
+export default RootStore;

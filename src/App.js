@@ -5,9 +5,10 @@ import Dashboard from "./containers/Dashboard/Dashboard";
 
 import { Switch, Route } from "react-router-dom";
 import { ROUTES } from "./consts";
-import Signin from "./containers/Signin/Signin";
+//import { useStores } from "./hooks/useStores";
 
 function App() {
+  //const store = useStores();
   return (
     <>
       <Switch>
