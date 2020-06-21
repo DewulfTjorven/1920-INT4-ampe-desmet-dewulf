@@ -43,7 +43,7 @@ const Card1 = () => {
             <SecButton cta="Create an account" />
           </li>
           <li className={style.signin}>
-            <NavLink className={style.signin__link} to={ROUTES.home}>
+            <NavLink className={style.signin__link} to={ROUTES.login}>
               Sign in
           </NavLink>
           </li>

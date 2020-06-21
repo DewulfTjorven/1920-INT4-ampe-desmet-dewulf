@@ -5,6 +5,7 @@ import Dashboard from "./containers/Dashboard/Dashboard";
 
 import { Switch, Route } from "react-router-dom";
 import { ROUTES } from "./consts";
+import Signin from "./containers/Signin/Signin";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         </Route>
         <Route path={ROUTES.dashboard}>
           <Dashboard />
+        </Route>
+        <Route path={ROUTES.login}>
+          <Signin />
         </Route>
       </Switch>
 

@@ -44,7 +44,7 @@ const Card1 = () => {
             <Button cta="Create an account" />
           </li>
           <li className={style.signin}>
-            <NavLink className={style.signin__link} to={ROUTES.addgroup}>
+            <NavLink className={style.signin__link} to={ROUTES.login}>
               Sign in
             </NavLink>
           </li>

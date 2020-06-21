@@ -14,15 +14,15 @@ const Nav = () => {
     <div className={style.nav}>
       <div className={style.nav__item}>
         <ul className={style.nav__item__links}>
-          <li><NavLink className={`${style.nav__item__link} ${style.nav__item__link__selected}`} to={ROUTES.addgroup}>
+          <li><NavLink className={`${style.nav__item__link} ${style.nav__item__link__selected}`} to={ROUTES.home}>
             Home
           </NavLink>
           </li>
-          <li><NavLink className={style.nav__item__link} to={ROUTES.addgroup}>
+          <li><NavLink className={style.nav__item__link} to={ROUTES.login}>
             Travel
           </NavLink>
           </li>
-          <li><NavLink className={style.nav__item__link} to={ROUTES.addgroup}>
+          <li><NavLink className={style.nav__item__link} to={ROUTES.login}>
             Map
           </NavLink>
           </li>
@@ -32,7 +32,7 @@ const Nav = () => {
         <img src={logo} width="92px" height="64px" alt="drone-logo"></img>
       </div>
       <div className={style.nav__item}>
-        <NavLink className={style.signin} to={ROUTES.addgroup}>Sign in</NavLink>
+        <NavLink className={style.signin} to={ROUTES.login}>Sign in</NavLink>
         <p className={style.signin__or}>or</p>
         <Button cta="Create an account" />
       </div>

@@ -1,0 +1,50 @@
+.login{
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 3.2rem;
+  letter-spacing: .1rem;
+  font-family: Cubano, Arial, Helvetica, sans-serif;
+  color: #214557;
+  width: 57.5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.line {
+  height: .2rem;
+  width: 4.5rem;
+  background-color: #FEC74F;
+  margin-bottom: 1.3rem;
+}
+
+.label{
+  color: #214557;
+  padding-bottom: 1rem;
+}
+
+.label:last-child{
+  padding-bottom: 1rem;
+}
+
+.input{
+  padding: .5rem;
+  background-color: #eeeeee;
+  border: none;
+  border-radius: .2rem;
+}
+
+.button{
+  padding: 1rem;
+  background-color: #FEC74F;
+  margin-top: 2rem;
+  border: none;
+  font-family: Cubano, Arial, Helvetica, sans-serif;
+  color: #214557;
+  font-size: 1.6rem;
+
+}
