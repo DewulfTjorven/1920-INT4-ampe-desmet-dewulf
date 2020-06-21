@@ -1,18 +1,26 @@
 import React from "react";
 
+import { useStores } from "../../../../hooks/useStores";
+
 import CardUpcoming from "./CardUpcoming/CardUpcoming";
 import CardStatistics from "./CardStatistics/CardStatistics";
-import CardTriplog from "./CardTriplog/CardTriplog";
+//import CardTriplog from "./CardTriplog/CardTriplog";
 
 import style from "./Dashboard_home.module.css";
 
 const Home = () => {
+    const { uiStore } = useStores();
+
+    // De huidige user ophalen
+    const user = uiStore.currentUser;
+    console.log(user);
+
     return (
         <>
             <div className={style.container}>
                 <section>
                     <h1 className={style.title__hidden}>Dashboard</h1>
-                    <p className={style.welcome_back}>Welcome back, <span className={style.welcome_back__name}>Jhuin</span></p>
+                    <p className={style.welcome_back}>Welcome back, <span className={style.welcome_back__name}>{user.name}</span></p>
                     <p className={style.ready}><span className={style.span__yellow}>Ready</span> to travel?</p>
                     <p className={style.dashboard_description}>Create your trip, train your pilotting skills, discover locations and so much more..</p>
                 </section>

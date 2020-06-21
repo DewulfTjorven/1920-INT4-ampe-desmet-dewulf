@@ -5,7 +5,7 @@ import Dashboard from "./containers/Dashboard/Dashboard";
 
 import { Switch, Route } from "react-router-dom";
 import { ROUTES } from "./consts";
-import { useStores } from "./hooks/useStores";
+//import { useStores } from "./hooks/useStores";
 
 function App() {
   //const store = useStores();

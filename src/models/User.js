@@ -8,7 +8,7 @@ class User {
     //this.messages = [];
     this.trips = [];
 
-    //this.groups = [];
+    this.trips = [];
 
     this.avatar = avatar;
     if (!avatar) {
@@ -26,10 +26,10 @@ class User {
   //  !this.messages.includes(message) && this.messages.push(message);
   //}
 
-  //linkGroup(group) {
-  //  !this.groups.includes(group) && this.groups.push(group);
-  //  !group.users.includes(this) && group.linkUser(this);
-  //}
+  linkTrip(trip) {
+    !this.trips.includes(trip) && this.trips.push(trip);
+    !trip.users.includes(this) && trip.linkUser(this);
+  }
 }
 
 export default User;

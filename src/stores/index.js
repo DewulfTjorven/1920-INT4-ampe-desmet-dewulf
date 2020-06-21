@@ -1,11 +1,11 @@
 import UiStore from "./UiStore";
 import UserStore from "./UserStore";
-import GroupStore from "./GroupStore";
+import TripStore from "./TripStore";
 
 class RootStore {
   constructor() {
     this.userStore = new UserStore(this);
-    this.groupStore = new GroupStore(this);
+    this.tripStore = new TripStore(this);
     this.uiStore = new UiStore(this);
   }
 }

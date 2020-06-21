@@ -19,13 +19,6 @@ class GroupStore {
   empty() {
     this.groups = [];
   }
-
-  get unreadLength() {
-    return this.groups.reduce(
-      (total, group) => (total += group.unreadLength),
-      0
-    );
-  }
 }
 decorate(GroupStore, {
   groups: observable,
