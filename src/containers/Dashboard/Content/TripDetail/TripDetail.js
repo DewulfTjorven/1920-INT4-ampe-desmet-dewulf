@@ -14,9 +14,8 @@ const TripDetail = () => {
         <>
             <div className={style.container}>
                 <section>
-                    <p className={style.welcome_back}>View past trips</p>
-                    <p className={style.ready}>Or create a new one</p>
-                    <p className={style.dashboard_description}>Create your trip, train your pilotting skills, discover locations and so much more..</p>
+                    <button></button>
+                    <h1 className={style.ready}>Mijn eerste reis</h1>
                 </section>
             </div>
         </>

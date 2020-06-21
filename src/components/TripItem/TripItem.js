@@ -6,6 +6,8 @@ import style from "./TripItem.module.css";
 
 import { ROUTES } from "../../consts";
 
+import LooseButton from "../LooseButton/LooseButton";
+
 import uiArrow from "../../img/ui_arrow__white.svg";
 
 const TripItem = () => {
@@ -25,9 +27,7 @@ const TripItem = () => {
       <p className={style.tripPilot}>Pilot</p>
       <p className={style.tripDate}>Date</p>
 
-      <button className={style.selectTripButton}>
-        View more<img src={uiArrow} alt="Arrow icon"></img>
-      </button>
+      <LooseButton cta="View more" />
 
     </div>
   );
