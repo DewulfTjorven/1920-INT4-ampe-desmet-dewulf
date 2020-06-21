@@ -2,5 +2,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  flex-direction: column;
+  height: auto;
+  padding-top: 3rem;
+}
+
+.pilot__button{
+  width: 30rem;
+  height: 10rem;
+  border: solid 2px white;
+  margin-top: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+.pilot__button img{
+  padding-right: 2rem;
+
+}
+
+.pilot__title{
+  font-size: 2.4rem;
+  color: white;
+
+}
+
+.pilot__line{
+  height: .2rem;
+  width: 4.5rem;
+  background-color: #FEC74F;
+  margin-bottom: 1.3rem;
+  margin-top: 1rem;
+
 }
