@@ -6,7 +6,7 @@ import LooseButtonRight from "../LooseButton/LooseButtonRight";
 import JoinForm from "./JoinForm/JoinForm";
 
 
-const CardTriplog = () => {
+const cardTripOptions = () => {
     return (
         <div className={style.dashboard_ready}>
             <section>
@@ -24,4 +24,4 @@ const CardTriplog = () => {
     );
 };
 
-export default CardTriplog;
+export default cardTripOptions;

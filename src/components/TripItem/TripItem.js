@@ -19,9 +19,9 @@ const TripItem = ({ trip, detailRoute }) => {
   return (
     <div onClick={handleSubmit} className={style.tripItemContainer}>
       <p className={style.tripName}>{trip.name}</p>
-      <p className={style.tripLocattion}>Taiwan</p>
+      <p className={style.tripLocation}>Taiwan</p>
       <p className={style.tripPilot}>Pilot</p>
-      <p className={style.tripDate}>Date</p>
+      <p className={style.tripDate}>{trip.date}</p>
 
       <button className={style.selectTripButton}>
         View more<img src={uiArrow} alt="Arrow icon"></img>

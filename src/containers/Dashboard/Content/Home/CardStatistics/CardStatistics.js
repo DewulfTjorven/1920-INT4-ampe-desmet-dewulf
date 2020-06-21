@@ -11,7 +11,7 @@ const CardStatistics = () => {
                 <p className={style.statistic__locations}>200</p>
             </div>
             <div className={style.statistic_container}>
-                <p className={style.statistic__name}>Time spent flying</p>
+                <p className={style.statistic__name}>Airtime</p>
                 <p className={style.statistic__flight_time}>21<span className={style.minutes}>H</span></p>
             </div>
             <div className={style.statistic_container}>

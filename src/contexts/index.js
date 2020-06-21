@@ -14,8 +14,8 @@ const u1 = new User({
 
 new Trip({
   id: "9969c1fc-0f51-3d3f-b687-d0835a081078",
-  name: "Reismannetje's eerste trip",
-  date: "100",
+  name: "Reismannetje's trip",
+  date: "17 / 11 / 20",
   tripCode: "10-047-AB",
   flightTime: "25:00",
   store: store.tripStore,

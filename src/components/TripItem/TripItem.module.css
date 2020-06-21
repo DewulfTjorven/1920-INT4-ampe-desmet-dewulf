@@ -1,22 +1,26 @@
 .tripItemContainer{
   display: grid;
-  grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
+  grid-template: 1fr / 2fr 1fr 1fr 1fr 1fr;
   padding: 2rem 0rem 2rem 0;
   background-color: white;
   border-radius: 0.3rem;
   box-shadow: 0px 4px 50px 0px rgba(0,0,0,0.1);
 
-  font-family: Cubano;
-  font-size: 1.8rem;
 }
 
 .tripItemContainer>p{
   font-family: Cubano;
+  font-size: 1.8rem;
+  line-height: 4rem;
 }
 
 .tripItemContainer:hover{
   background-color: rgb(249, 249, 249);
   cursor: pointer;
+}
+
+.tripItemContainer:hover .selectTripButton>img{
+  margin-right: 0rem;
 }
 
 .tripName{
@@ -47,6 +51,3 @@
   position: relative;
 }
 
-.selectTripButton:hover>img{
-  margin-right: 0rem;
-}

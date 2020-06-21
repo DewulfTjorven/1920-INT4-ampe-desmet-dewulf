@@ -7,6 +7,7 @@
 .statistic_container{
     text-align: center;
     border-right: 0.3rem solid #FEC74F;
+    font-weight: 600;
 }
 
 .statistic__name{

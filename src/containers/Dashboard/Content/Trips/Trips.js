@@ -7,6 +7,7 @@ import style from "./Dashboard_trips.module.css";
 
 import ProfileHeading from "../../../../components/ProfileHeading/ProfileHeading";
 import TripItem from "../../../../components/TripItem/TripItem";
+import CardTripOptions from "../../../../components/CardTripOptions/CardTripOptions";
 
 
 const Trips = (props) => {
@@ -29,18 +30,23 @@ const Trips = (props) => {
 
                 <section className={style.log_container}>
                     <h2 className={style.subtitle}>Past trips</h2>
-                    <div>
-                        <div className={style.log__categorie_names}>
-                            <p>Name</p>
-                            <p>Location</p>
-                            <p>Pilot</p>
-                            <p>Date</p>
-                        </div>
+                    <div className={style.tripsContainer}>
+                        <div>
+                            <div className={style.log__categorie_names}>
+                                <p>Name</p>
+                                <p>Location</p>
+                                <p>Pilot</p>
+                                <p>Date</p>
+                            </div>
 
-                        <div className={style.tripLogContainer}>
-                            {tripStore.trips.map(trip => (
-                                <TripItem trip={trip} key={trip.id} detailRoute={ROUTES.dashboardTripDetail.to} />
-                            ))}
+                            <div className={style.tripLogContainer}>
+                                {tripStore.trips.map(trip => (
+                                    <TripItem trip={trip} key={trip.id} detailRoute={ROUTES.dashboardTripDetail.to} />
+                                ))}
+                            </div>
+                        </div>
+                        <div className={style.cardTripOptions}>
+                            <CardTripOptions />
                         </div>
                     </div>
                 </section>
