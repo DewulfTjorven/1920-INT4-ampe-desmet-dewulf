@@ -5,30 +5,11 @@
     font-family: Avenir;
 }
 
-.title__hidden{
-    display: none;
-}
-
-.welcome_back{
-    font-family: Cubano;
-    font-size: 2.5rem;
-    color: #002A3F;
-    margin-top: 6rem;
-}
-
-.ready{
+.tripName{
     font-family: Cubano;
     font-size: 5rem;
-    color: #FEC74F;
-}
-
-.span__yellow{
-    color: #FEC74F;
-}
-
-.dashboard_description{
     color: #002A3F;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
 }
 
 .subtitle{
@@ -44,4 +25,8 @@
     height: 0.3rem;
     margin-top: 1rem;
     background-color: #FEC74F;
+}
+
+.header{
+    margin-top: 5rem;
 }

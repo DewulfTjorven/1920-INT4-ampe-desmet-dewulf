@@ -8,7 +8,7 @@ const LooseButton = (props) => {
 
   return (
     <button className={style.selectTripButton}>
-      {props.cta}<img src={uiArrow} alt="Arrow icon"></img>
+      <img src={uiArrow} alt="Arrow icon"></img>{props.cta}
     </button>
   );
 };

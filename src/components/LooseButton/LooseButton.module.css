@@ -16,12 +16,13 @@
 }
 
 .selectTripButton>img{
-  margin-right: 1rem;
+  margin-left: 1rem;
   transition: all 0.2s;
   width: 2rem;
+  transform: scaleX(-1);
   position: relative;
 }
 
 .selectTripButton:hover>img{
-  margin-right: 0rem;
+  margin-left: 0rem;
 }
