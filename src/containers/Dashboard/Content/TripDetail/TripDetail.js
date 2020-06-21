@@ -23,18 +23,11 @@ const TripDetail = () => {
     console.log(id);
     const trip = tripStore.getTripById(id);
 
-
-    // Back button
-    const handleBackButton = e => {
-        e.preventDefault();
-        history.push(ROUTES.dashboardTrips);
-    };
-
     return (
         <>
             <div className={style.container}>
                 <section className={style.header}>
-                    <LooseButton onClick={handleBackButton} cta="Go back" />
+                    <LooseButton link={ROUTES.dashboardTrips} cta="Go back" />
                     <h1 className={style.tripName}>{trip.name}</h1>
                 </section>
             </div>
