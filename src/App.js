@@ -2,6 +2,8 @@ import React from "react";
 
 import Landing from "./containers/Landing/Landing";
 import Dashboard from "./containers/Dashboard/Dashboard";
+import Signin from "./containers/Signin/Signin";
+
 
 import { Switch, Route } from "react-router-dom";
 import { ROUTES } from "./consts";
