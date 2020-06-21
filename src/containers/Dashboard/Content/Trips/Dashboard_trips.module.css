@@ -2,6 +2,7 @@
     width: 75%;
     height: 100vh;
     margin: 0 auto;
+    font-family: Avenir;
 }
 
 .title__hidden{
@@ -47,4 +48,21 @@
 
 .log_container{
     margin-top: 4rem;
+}
+
+
+.log__categorie_names{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+
+    font-family: Cubano;
+    font-size: 1.1rem;
+    color: #002A3F;
+}
+
+
+.tripLogContainer>div{
+    margin-bottom: 2.5rem;
 }

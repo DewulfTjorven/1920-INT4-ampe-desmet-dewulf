@@ -2,6 +2,7 @@ import React from "react";
 
 import Home from "./Home/Home";
 import Trips from "./Trips/Trips";
+import TripDetail from "./TripDetail/TripDetail";
 import Map from "./Map/Map";
 import Cockpit from "./Cockpit/Cockpit";
 
@@ -21,6 +22,9 @@ const Content = () => {
                 </Route>
                 <Route path={ROUTES.dashboardTrips}>
                     <Trips />
+                </Route>
+                <Route path={ROUTES.dashboardTripDetail.path}>
+                    <TripDetail />
                 </Route>
                 <Route path={ROUTES.dashboardMap}>
                     <Map />

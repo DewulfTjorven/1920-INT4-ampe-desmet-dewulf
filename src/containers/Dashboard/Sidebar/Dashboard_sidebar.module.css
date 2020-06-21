@@ -34,6 +34,7 @@
     font-family: Cubano;
     font-size: 2rem;
     transition: all 0.2s;
+    opacity: 0.8;
 }
 
 .navbar_link:hover{
@@ -43,6 +44,7 @@
 .navbar_link__active{
     background-color: #0E3447;
     border-left: solid 0.3rem #FEC74F;
+    opacity: 1;
 }
 
 .navbar_link>img{

@@ -2,6 +2,8 @@ import React from "react";
 
 import style from "./Dashboard_trips.module.css";
 
+import TripItem from "../../../../components/TripItem/TripItem";
+
 
 const Trips = () => {
     return (
@@ -16,7 +18,17 @@ const Trips = () => {
                 <section className={style.log_container}>
                     <h1 className={style.subtitle}>Past trips</h1>
                     <div>
-                        <div></div>
+                        <div className={style.log__categorie_names}>
+                            <p>Name</p>
+                            <p>Location</p>
+                            <p>Pilot</p>
+                            <p>Date</p>
+                        </div>
+
+                        <div className={style.tripLogContainer}>
+                            <TripItem />
+                            <TripItem />
+                        </div>
                     </div>
                 </section>
             </div>

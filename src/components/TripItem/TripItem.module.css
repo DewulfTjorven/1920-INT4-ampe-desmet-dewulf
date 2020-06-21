@@ -1,0 +1,52 @@
+.tripItemContainer{
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
+  padding: 2rem 0rem 2rem 0;
+  background-color: white;
+  border-radius: 0.3rem;
+  box-shadow: 0px 4px 50px 0px rgba(0,0,0,0.1);
+
+  font-family: Cubano;
+  font-size: 1.8rem;
+}
+
+.tripItemContainer:hover{
+  background-color: rgb(249, 249, 249);
+  cursor: pointer;
+}
+
+.tripName{
+  padding-left: 4rem;
+}
+
+.selectTripButton{
+  margin-right: 4rem;
+  border: none;
+  background: none;
+  font-family: Cubano;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15rem;
+}
+
+.selectTripButton:hover{
+  cursor: pointer;
+  color: #012030;
+}
+
+.selectTripButton>img{
+  margin-right: 1rem;
+  transition: all 0.2s;
+  width: 2rem;
+  position: relative;
+}
+
+.selectTripButton:hover>img{
+  margin-right: 0rem;
+}
+
+.selectTripButton>img{
+
+}
