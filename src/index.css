@@ -43,14 +43,34 @@ html, body {
 body {
   font-size: 1.4rem;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: Avenir, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: Cubano;
+  src: url(./fonts/cubano/cubano.woff), url(./fonts/cubano/cubano.woff2);
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/avenir/avenir.woff), url(./fonts/avenir/avenir.woff2);
 }
 
 
 a {
   text-decoration: none;
+}
+
+p{
+  font-size: 1.6rem;
+  font-family: Avenir;
+  opacity: 0.8;
+}
+
+h1,h2,h3,h4{
+  font-family: Cubano;
+
 }
 
