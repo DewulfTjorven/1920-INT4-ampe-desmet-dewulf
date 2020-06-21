@@ -35,7 +35,7 @@ const Nav = () => {
         <div className={style.nav__item}>
           <NavLink className={style.signin} to={ROUTES.login}>Sign in</NavLink>
           <p className={style.signin__or}>or</p>
-          <Button cta="Create an account" />
+          <NavLink to={ROUTES.register}><Button cta="Create an account" /></NavLink>
         </div>
       </div>
     </div >

@@ -1,15 +1,15 @@
 import React from "react";
 
+import style from "./RegisterForm.module.css";
 
 
-import style from "./Login.module.css";
-
-
-const Login = () => {
+const RegisterForm = () => {
   return (
     <div className={style.login}>
-        <h1 className={style.title}>Sign in</h1>
+        <h1 className={style.title}>Register</h1>
         <div className={style.line}></div>
+        <label className={style.label}>Full name</label>
+        <input className={style.input} type="email"></input>
         <label className={style.label}>E-mail</label>
         <input className={style.input} type="email"></input>
         <label className={style.label}>Password</label>
@@ -20,4 +20,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default RegisterForm;
