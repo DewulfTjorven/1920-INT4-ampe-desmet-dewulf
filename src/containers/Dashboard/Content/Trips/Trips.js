@@ -1,11 +1,17 @@
 import React from "react";
 
+import { useStores } from "../../../../hooks/useStores";
+import { ROUTES } from "./../../../../consts";
+
 import style from "./Dashboard_trips.module.css";
 
 import TripItem from "../../../../components/TripItem/TripItem";
 
 
 const Trips = () => {
+    const { tripStore } = useStores();
+
+
     return (
         <>
             <div className={style.container}>
@@ -27,8 +33,9 @@ const Trips = () => {
                         </div>
 
                         <div className={style.tripLogContainer}>
-                            <TripItem />
-                            <TripItem />
+                            {tripStore.trips.map(trip => (
+                                <TripItem trip={trip} key={trip.id} detailRoute={ROUTES.dashboardTripDetail.to} />
+                            ))}
                         </div>
                     </div>
                 </section>

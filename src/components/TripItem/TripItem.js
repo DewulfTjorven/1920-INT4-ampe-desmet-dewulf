@@ -1,26 +1,24 @@
 import React from "react";
 
 import { useHistory } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import style from "./TripItem.module.css";
 
-import { ROUTES } from "../../consts";
-
 import uiArrow from "../../img/ui_arrow__white.svg";
 
-const TripItem = () => {
+const TripItem = ({ trip, detailRoute }) => {
 
   const history = useHistory();
 
   const handleSubmit = e => {
     e.preventDefault();
-    const id = 10;
-    history.push(ROUTES.dashboardTripDetail.to + id);
+    history.push(detailRoute + trip.id);
   };
 
   return (
     <div onClick={handleSubmit} className={style.tripItemContainer}>
-      <p className={style.tripName}>Mijn eerste reis</p>
+      <p className={style.tripName}>{trip.name}</p>
       <p className={style.tripLocattion}>Taiwan</p>
       <p className={style.tripPilot}>Pilot</p>
       <p className={style.tripDate}>Date</p>
@@ -31,6 +29,10 @@ const TripItem = () => {
 
     </div>
   );
+};
+
+TripItem.propTypes = {
+  detailRoute: PropTypes.string.isRequired
 };
 
 export default TripItem;
