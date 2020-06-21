@@ -11,30 +11,32 @@ import logo from "../../../../img/logo.png";
 
 const Nav = () => {
   return (
-    <div className={style.nav}>
-      <div className={style.nav__item}>
-        <ul className={style.nav__item__links}>
-          <li><NavLink className={`${style.nav__item__link} ${style.nav__item__link__selected}`} to={ROUTES.home}>
-            Home
-          </NavLink>
-          </li>
-          <li><NavLink className={style.nav__item__link} to={ROUTES.login}>
-            Travel
-          </NavLink>
-          </li>
-          <li><NavLink className={style.nav__item__link} to={ROUTES.login}>
-            Map
-          </NavLink>
-          </li>
-        </ul>
-      </div>
+    <div className={style.container}>
       <div className={style.nav__logo}>
-        <img src={logo} width="92px" height="64px" alt="drone-logo"></img>
+        <img className={style.nav__logo__img} src={logo} width="92px" height="64px" alt="drone-logo"></img>
       </div>
-      <div className={style.nav__item}>
-        <NavLink className={style.signin} to={ROUTES.login}>Sign in</NavLink>
-        <p className={style.signin__or}>or</p>
-        <Button cta="Create an account" />
+      <div className={style.nav}>
+        <div className={style.nav__item}>
+          <ul className={style.nav__item__links}>
+            <li><NavLink className={`${style.nav__item__link} ${style.nav__item__link__selected}`} to={ROUTES.home}>
+              Home
+          </NavLink>
+            </li>
+            <li><NavLink className={style.nav__item__link} to={ROUTES.login}>
+              Travel
+          </NavLink>
+            </li>
+            <li><NavLink className={style.nav__item__link} to={ROUTES.login}>
+              Map
+          </NavLink>
+            </li>
+          </ul>
+        </div>
+        <div className={style.nav__item}>
+          <NavLink className={style.signin} to={ROUTES.login}>Sign in</NavLink>
+          <p className={style.signin__or}>or</p>
+          <Button cta="Create an account" />
+        </div>
       </div>
     </div >
   );
