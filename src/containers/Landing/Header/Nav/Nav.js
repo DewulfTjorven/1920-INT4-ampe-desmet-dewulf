@@ -13,7 +13,7 @@ const Nav = () => {
   return (
     <div className={style.container}>
       <div className={style.nav__logo}>
-        <img className={style.nav__logo__img} src={logo} width="92px" height="64px" alt="drone-logo"></img>
+        <NavLink to={ROUTES.home}><img className={style.nav__logo__img} src={logo} width="92px" height="64px" alt="drone-logo"></img></NavLink>
       </div>
       <div className={style.nav}>
         <div className={style.nav__item}>

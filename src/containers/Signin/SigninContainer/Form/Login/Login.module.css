@@ -12,14 +12,14 @@
   color: #214557;
   width: 57.5rem;
   padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .line {
   height: .2rem;
   width: 4.5rem;
   background-color: #FEC74F;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 .label{
