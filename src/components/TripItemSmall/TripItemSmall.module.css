@@ -1,0 +1,30 @@
+.tripContainer{
+    display: grid;
+    grid-template: 1fr / 2fr 1fr 0.5fr;
+    padding: 0.7rem 0;
+    border-bottom: 0.1rem solid rgb(255, 255, 255);
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tripContainer>p{
+    color: white;
+    font-family: Cubano;
+}
+
+.tripName+p{
+    color: #FEC74F;
+}
+
+.expandButton{
+    transition: all 0.2s;
+}
+
+.tripContainer:hover{
+    opacity: 0.9;
+}
+
+.tripContainer:hover .expandButton{
+    transform: scale(1.2);
+}

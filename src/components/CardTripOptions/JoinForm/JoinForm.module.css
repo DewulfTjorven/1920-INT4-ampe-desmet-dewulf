@@ -1,0 +1,32 @@
+.submitButton{
+    width: 100%;
+    background: none;
+    border: none;
+    margin-top: 3rem;
+    border: none;
+    background: none;
+    font-family: Cubano;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    color: #002A3F;
+    margin-left: auto;
+}
+
+.submitButton:hover{
+    cursor: pointer;
+    color: #012030;
+  }
+  
+.submitButton>img{
+    margin-right: 1rem;
+    transition: all 0.2s;
+    width: 2rem;
+    position: relative;
+}
+
+.submitButton:hover>img{
+    margin-right: 0rem;
+}

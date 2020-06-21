@@ -4,7 +4,9 @@ import React from "react";
 import CardUpcoming from "./CardUpcoming/CardUpcoming";
 import CardStatistics from "./CardStatistics/CardStatistics";
 import ProfileHeading from "../../../../components/ProfileHeading/ProfileHeading";
-//import CardTriplog from "./CardTriplog/CardTriplog";
+import LatestTrips from "./LatestTrips/LatestTrips";
+import CardFeatured from "./CardFeatured/CardFeatured";
+import CardTripOptions from "../../../../components/CardTripOptions/CardTripOptions";
 
 import style from "./Dashboard_home.module.css";
 
@@ -15,7 +17,9 @@ const Home = (props) => {
     return (
         <>
             <div className={style.container}>
+
                 <ProfileHeading user={currentUser} />
+
                 <section>
                     <h1 className={style.title__hidden}>Dashboard</h1>
                     <p className={style.welcome_back}>Welcome back, <span className={style.welcome_back__name}>{currentUser.name}</span></p>
@@ -26,22 +30,17 @@ const Home = (props) => {
 
                 <div className={style.dashboard_content__container}>
 
-
                     <CardStatistics />
 
-                    <section className={style.dashboard_log}>
-                        <h2 className={style.subtitle}>Trip log</h2>
-                    </section>
+                    <div className={style.cardTripOptions}>
+                        <CardTripOptions />
+                    </div>
 
                     <CardUpcoming />
 
-                    <section className={style.dashboard_featured}>
-                        <h2 className={style.subtitle}>Featured</h2>
-                    </section>
+                    <CardFeatured />
 
-                    <section className={style.dashboard_ready}>
-                        <h2 className={style.subtitle}>Ready to go?</h2>
-                    </section>
+                    <LatestTrips />
 
                 </div>
             </div>

@@ -1,0 +1,24 @@
+.subtitle{
+    font-family: Cubano;
+    font-size: 3rem;
+    color: #002A3F;
+}
+
+.subtitle::after{
+    content: "";
+    display: block;
+    width: 4.2rem;
+    margin: 1rem auto;
+    height: 0.3rem;
+    margin-top: 1rem;
+    background-color: white;
+}
+
+.dashboard_featured{
+    grid-column: 3;
+    grid-row: 1 / span 3;
+    text-align: center;
+    background-color: #FEC74F;
+    border-radius: 0.3rem;
+    padding: 3rem;
+}

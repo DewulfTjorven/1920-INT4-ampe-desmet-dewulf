@@ -12,7 +12,7 @@
     font-family: Cubano;
     font-size: 2.5rem;
     color: #002A3F;
-    margin-top: 6rem;
+    margin-top: 5rem;
 }
 
 .welcome_back__name{
@@ -46,53 +46,28 @@
 
 .dashboard_content__container{
     display: grid;
-    grid-template: 7rem 1fr 1fr / 1fr 1fr 1fr;
-    grid-gap: 5rem;
+    grid-template: 5rem 1fr 2fr / 1fr 1fr 1fr;
+    grid-gap: 4rem;
     padding-top: 3rem;
-    height: 79vh;
+    height: 77vh;
 }
 
 .dashboard_content__container>section{
     box-shadow: 0px 4px 50px 0px rgba(0,0,0,0.1);
 }
 
-
-
-
-.dashboard_log{
-    grid-row: 2 / span 2;
-    background-color: white;
-    border-radius: 0.3rem;
-    padding: 3rem;
-}
-
-.dashboard_featured{
-    grid-column: 3;
-    grid-row: 1 / span 3;
-    text-align: center;
-    background-color: #FEC74F;
-    border-radius: 0.3rem;
-    padding: 3rem;
+.cardTripOptions{
+    grid-row: 2 / span 2; 
 }
 
 .dashboard_featured .subtitle::after{
     background-color: white;
 }
 
-.dashboard_featured .subtitle::after, .dashboard_upcoming .subtitle::after, .dashboard_ready .subtitle::after{
+.dashboard_featured .subtitle::after, .dashboard_upcoming .subtitle::after{
     margin: 1rem auto;
 }
 
-.dashboard_ready{
-    text-align: center;
-    background-color: #002A3F;
-    border-radius: 0.3rem;
-    padding: 3rem;
-}
 
-.dashboard_ready .subtitle{
-    color: white;
-
-}
 
 

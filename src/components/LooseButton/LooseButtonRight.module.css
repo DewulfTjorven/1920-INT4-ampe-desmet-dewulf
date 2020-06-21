@@ -1,0 +1,29 @@
+.selectTripButton{
+  margin-top: 2rem;
+  border: none;
+  background: none;
+  font-family: Cubano;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 65%;
+  color: #002A3F;
+  margin-left: auto;
+}
+
+.selectTripButton:hover{
+  cursor: pointer;
+  color: #012030;
+}
+
+.selectTripButton>img{
+  margin-right: 1rem;
+  transition: all 0.2s;
+  width: 2rem;
+  position: relative;
+}
+
+.selectTripButton:hover>img{
+  margin-right: 0rem;
+}

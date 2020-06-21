@@ -1,0 +1,21 @@
+.dashboard_logtrips{
+    background-color: #002A3F;
+    border-radius: 0.3rem;
+    padding: 3rem;
+}
+
+.subtitle{
+    font-family: Cubano;
+    font-size: 3rem;
+    color: white;
+}
+
+.subtitle::after{
+    content: "";
+    display: block;
+    width: 4.2rem;
+    margin: 1rem 0;
+    height: 0.3rem;
+    margin-top: 1rem;
+    background-color: #FEC74F;
+}
