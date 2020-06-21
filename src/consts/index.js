@@ -6,7 +6,8 @@ const ROUTES = {
   dashboardTripDetail: { path: "/dashboard/trip/:id", to: "/dashboard/trip/" },
   dashboardMap: "/dashboard/map",
   dashboardCockpit: "/dashboard/cockpit",
-  login: "/login"
+  login: "/login",
+  dashboardProfile: { path: "/dashboard/profile", to: "/dashboard/profile" }
 };
 
 export { ROUTES };

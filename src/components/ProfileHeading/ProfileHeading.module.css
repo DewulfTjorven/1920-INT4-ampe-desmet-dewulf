@@ -1,0 +1,26 @@
+.container{
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  right: 6rem;
+  top: 6rem;
+}
+
+.profilePicture{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  overflow: hidden;
+}
+
+.profileName{
+  font-size: 1.6rem;
+  color: #002A3F;
+  font-weight: 600;
+  padding-left: 0.8rem;
+}
+
+.largeIcon{
+  margin-left: 1rem;
+}

@@ -10,6 +10,10 @@
   font-size: 1.8rem;
 }
 
+.tripItemContainer>p{
+  font-family: Cubano;
+}
+
 .tripItemContainer:hover{
   background-color: rgb(249, 249, 249);
   cursor: pointer;

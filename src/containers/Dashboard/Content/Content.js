@@ -5,12 +5,20 @@ import Trips from "./Trips/Trips";
 import TripDetail from "./TripDetail/TripDetail";
 import Map from "./Map/Map";
 import Cockpit from "./Cockpit/Cockpit";
+import Profile from "./Profile/Profile";
 
+import { useStores } from "../../../hooks/useStores";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { ROUTES } from "../../../consts";
 
 
 const Content = () => {
+    const { uiStore } = useStores();
+
+    // De huidige user ophalen
+    const user = uiStore.currentUser;
+    console.log(user);
+
     return (
         <>
             <Switch>
@@ -18,20 +26,24 @@ const Content = () => {
                     <Redirect to={ROUTES.dashboardHome} />
                 </Route>
                 <Route exact path={ROUTES.dashboardHome}>
-                    <Home />
+                    <Home user={user} />
+                </Route>
+                <Route path={ROUTES.dashboardProfile.path}>
+                    <Profile user={user} />
                 </Route>
                 <Route path={ROUTES.dashboardTrips}>
-                    <Trips />
+                    <Trips user={user} />
                 </Route>
                 <Route path={ROUTES.dashboardTripDetail.path}>
-                    <TripDetail />
+                    <TripDetail user={user} />
                 </Route>
                 <Route path={ROUTES.dashboardMap}>
-                    <Map />
+                    <Map user={user} />
                 </Route>
                 <Route path={ROUTES.dashboardCockpit}>
-                    <Cockpit />
+                    <Cockpit user={user} />
                 </Route>
+
             </Switch>
         </>
     );

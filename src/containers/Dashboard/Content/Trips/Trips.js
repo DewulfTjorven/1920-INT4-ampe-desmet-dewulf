@@ -5,16 +5,21 @@ import { ROUTES } from "./../../../../consts";
 
 import style from "./Dashboard_trips.module.css";
 
+import ProfileHeading from "../../../../components/ProfileHeading/ProfileHeading";
 import TripItem from "../../../../components/TripItem/TripItem";
 
 
-const Trips = () => {
+const Trips = (props) => {
     const { tripStore } = useStores();
 
+    const currentUser = props.user;
 
     return (
         <>
             <div className={style.container}>
+
+                <ProfileHeading user={currentUser} />
+
                 <section>
                     <h1 className={style.title__hidden}>Trip Log</h1>
                     <p className={style.welcome_back}>View past trips</p>
