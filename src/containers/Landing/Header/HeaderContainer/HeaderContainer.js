@@ -32,7 +32,7 @@ const HeaderContainer = () => {
       <Title
         title={titles[count]}
         text="Discover the world through a live bird’s eye view.
-        View your favourite spots or discover new ones online, with your friends, famsily or other someone you don’t even know." />
+        View your favourite spots or discover new ones online, with your friends, family or people you meet online." />
       <div className={style.hero}>
         <img className={style.hero__image} src={hero} height="728px" width="874px" alt="Island with people and drone view"></img>
       </div>
