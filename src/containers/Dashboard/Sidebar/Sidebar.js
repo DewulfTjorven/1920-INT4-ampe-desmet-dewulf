@@ -21,7 +21,7 @@ const Sidebar = () => {
     <>
       <nav className={style.container}>
         <ul className={style.navList}>
-          <li className={style.navbar_li}><NavLink className={style.navbar_logo} to={ROUTES.dashboardHome}>
+          <li className={style.navbar_li}><NavLink className={style.navbar_logo} to={ROUTES.home}>
             <img src={dashboardLogo} width="78px" height="60px" alt="Dashboard logo"></img>
           </NavLink>
           </li>
