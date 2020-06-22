@@ -1,19 +1,21 @@
 import "firebase/auth";
 
 class AuthService {
-    constructor(firebase) {
+    constructor(firebase, onAuthStateChanged) {
         this.auth = firebase.auth();
+        this.auth.onAuthStateChanged(user => onAuthStateChanged(user))
     }
 
     login = async (email, password) => {
         try {
-            const result = this.auth.signInWithEmailAndPassword(email, password);
+            const result = await this.auth.signInWithEmailAndPassword(email, password);
             return result;
         } catch (error) {
             return error.code;
         }
-    };
-    login = async () => {
+    }
+
+    logout = async () => {
         try {
             const result = this.auth.signOut();
             return result;
