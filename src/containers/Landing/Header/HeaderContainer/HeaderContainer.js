@@ -16,7 +16,7 @@ const HeaderContainer = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCount(count++);
-    }, 7000);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
