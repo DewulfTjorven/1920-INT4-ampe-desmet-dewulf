@@ -35,11 +35,11 @@ const Login = () => {
       <h1 className={style.title}>Sign in</h1>
       <div className={style.line}></div>
       <form onSubmit={handleLogin} className={style.formContainer}>
-
         <TextInputAuth value={email} onChange={e => setEmail(e.currentTarget.value)} label="E-mail" type="email" name="email" placeholder="Johndoe@mail.com" />
         <TextInputAuth value={password} onChange={e => setPassword(e.currentTarget.value)} label="Password" type="password" name="password" placeholder="Ibiza123" />
-
-        <div><input className={style.check} type="checkbox" placeholder="check me"></input> Remember me</div>
+        <label className={style.terms}>Remember me
+          <input className={style.check} type="checkbox" placeholder="check me"></input>
+        </label>
         <button className={style.button} type="submit">Sign in</button>
       </form>
     </div>

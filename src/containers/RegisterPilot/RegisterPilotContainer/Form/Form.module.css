@@ -1,8 +1,10 @@
 .form{
   width: 40rem;
   height: auto;
-  background-color: white;
-  border-radius: .3rem;
   padding: 4rem 2.5rem;
+  border-radius: .3rem;
   box-shadow: 0 0 2rem rgba(0, 0, 0, .4);
+  background-color: rgba(33, 69, 87, .75);
+  border: solid .2rem white;
+
 }

@@ -2,6 +2,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;
-  padding-top: 6rem;
+  margin-top: 5vw;
 }

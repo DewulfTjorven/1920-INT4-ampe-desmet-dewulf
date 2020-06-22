@@ -8,6 +8,7 @@ const ROUTES = {
   dashboardCockpit: "/dashboard/cockpit",
   login: "/login",
   register: "/register",
+  registerPilot: "/registerpilot",
   dashboardProfile: { path: "/dashboard/profile", to: "/dashboard/profile" }
 };
 
