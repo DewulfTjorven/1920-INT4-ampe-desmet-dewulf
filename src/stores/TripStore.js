@@ -8,6 +8,14 @@ class TripStore {
 
   getTripById = id => this.trips.find(trip => trip.id === id);
 
+
+
+  searchTrip = trip => {
+    this.trips.forEach(trip => {
+
+    });
+  };
+
   addTrip = trip => {
     this.trips.push(trip);
   };
