@@ -10,9 +10,9 @@ import signin from "../../../../img/signin.png";
 const Form = () => {
   return (
     <div className={style.form}>
-        <img src={signin} width="50px"alt="lock"></img>
+      <img src={signin} width="50px" alt="lock"></img>
 
-        <Login />
+      <Login />
     </div>
   );
 };

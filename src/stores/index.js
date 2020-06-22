@@ -16,7 +16,7 @@ class RootStore {
       appId: process.env.REACT_APP_appId
     };
     // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+    this.firebase = firebase.initializeApp(firebaseConfig);
 
 
     this.userStore = new UserStore(this);

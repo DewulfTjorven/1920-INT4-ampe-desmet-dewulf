@@ -1,7 +1,7 @@
 import { v4 } from "uuid";
 
 class User {
-  constructor({ id = v4(), name, isPilot = "false", store, avatar = "" }) {
+  constructor({ id = v4(), name, isPilot = "false", store, avatar = "", email, password }) {
     this.id = id;
     this.name = name;
     this.isPilot = isPilot;
@@ -18,6 +18,9 @@ class User {
     }
     this.store = store;
     this.store.addUser(this);
+
+    this.email = email;
+    this.password = password;
   }
 
   //linkMessage(message) {
