@@ -11,7 +11,7 @@ import hero from "../../../../img/hero.png";
 const HeaderContainer = () => {
 
   let [count, setCount] = useState(0);
-  let titles = ["title 1" , "title 2", "title 3"];
+  let titles = ["Explore The world with family & friends" , "Discover new places", "interact with locals"];
 
   useEffect(() => {
     const interval = setInterval(() => {
