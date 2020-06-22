@@ -34,10 +34,10 @@ function App() {
           <CreateTrip3 />
         </Route>
         <Route path={ROUTES.dashboard}>
-          <Redirect to={ROUTES.login} />
+          <Dashboard />
         </Route>
         <Route path={ROUTES.login}>
-          <Redirect to={ROUTES.dashboard} />
+          <Signin />
         </Route>
         <Route path={ROUTES.register}>
           <Register />
