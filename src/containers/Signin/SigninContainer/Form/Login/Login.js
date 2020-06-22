@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
+import { ROUTES } from "../../../../../consts";
 
 import style from "./Login.module.css";
 import User from "../../../../../models/User";
@@ -10,6 +12,7 @@ import { useStores } from "../../../../../hooks/useStores"
 
 const Login = () => {
   const { userStore, uiStore } = useStores();
+  const history = useHistory();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -19,7 +22,12 @@ const Login = () => {
     e.preventDefault();
     const user = new User({ name: "", store: userStore, email: email, password: password });
     const result = await uiStore.loginUser(user);
+
     console.log(result);
+
+    if (result) {
+      history.push(ROUTES.dashboard);
+    }
   };
 
   return (
@@ -29,7 +37,7 @@ const Login = () => {
       <form onSubmit={handleLogin} className={style.formContainer}>
 
         <TextInputAuth value={email} onChange={e => setEmail(e.currentTarget.value)} label="E-mail" type="email" name="email" placeholder="Johndoe@mail.com" />
-        <TextInputAuth value={password} onChange={e => setPassword(e.currentTarget.value)} label="Password" type="input" name="password" placeholder="Ibiza123" />
+        <TextInputAuth value={password} onChange={e => setPassword(e.currentTarget.value)} label="Password" type="password" name="password" placeholder="Ibiza123" />
 
         <div><input className={style.check} type="checkbox" placeholder="check me"></input> Remember me</div>
         <button className={style.button} type="submit">Sign in</button>

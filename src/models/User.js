@@ -1,9 +1,10 @@
 import { v4 } from "uuid";
 
 class User {
-  constructor({ id = v4(), name, isPilot = "false", store, avatar = "", email, password }) {
+  constructor({ id = v4(), name, surName, isPilot = "false", store, avatar = "", email, password }) {
     this.id = id;
     this.name = name;
+    this.surName = surName;
     this.isPilot = isPilot;
 
     this.trips = [];
