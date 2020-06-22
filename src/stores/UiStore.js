@@ -27,6 +27,11 @@ class UiStore {
     return result;
   }
 
+  registerUser = async (user) => {
+    const result = await this.authService.register(user.name, user.email, user.password);
+    return result;
+  }
+
   setCurrentUser(user) {
     this.currentUser = user;
   }

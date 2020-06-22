@@ -23,6 +23,25 @@ class AuthService {
             return error.code;
         }
     };
+
+    register = async (name, email, password) => {
+        console.log(name, email, password);
+        try {
+            const userCredential = await this.auth.createUserWithEmailAndPassword(email, password);
+            if (userCredential) {
+                try {
+                    await userCredential.user.updateProfile({
+                        displayName: name
+                    });
+                } catch (error) {
+                    return error.code;
+                }
+            }
+            return userCredential.user;
+        } catch (error) {
+            return error.code;
+        }
+    }
 }
 
 export default AuthService;

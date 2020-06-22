@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
+import { ROUTES } from "../../../../../consts";
 
 import style from "./RegisterForm.module.css";
 
@@ -12,6 +14,7 @@ import User from "../../../../../models/User";
 
 const RegisterForm = () => {
   const { userStore, uiStore } = useStores();
+  const history = useHistory();
 
   const [name, setName] = useState("");
   const [surName, setSurName] = useState("");
@@ -30,8 +33,12 @@ const RegisterForm = () => {
       password: password
     });
 
-    const result = await uiStore.loginUser(user);
+    const result = await uiStore.registerUser(user);
     console.log(result);
+
+    if (result) {
+      history.push(ROUTES.dashboard);
+    }
   };
 
 
