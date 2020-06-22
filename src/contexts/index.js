@@ -21,7 +21,7 @@ new Trip({
   store: store.tripStore,
 });
 
-//store.uiStore.setCurrentUser(u1);
+store.uiStore.setCurrentUser(u1);
 
 window.store = store;
 

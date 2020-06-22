@@ -34,28 +34,13 @@ function App() {
           <CreateTrip3 />
         </Route>
         <Route path={ROUTES.dashboard}>
-          {
-            uiStore.currentUser ?
-              <Dashboard />
-              :
-              <Redirect to={ROUTES.login} />
-          }
+          <Redirect to={ROUTES.login} />
         </Route>
         <Route path={ROUTES.login}>
-          {
-            uiStore.currentUser ?
-              <Redirect to={ROUTES.dashboard} />
-              :
-              <Signin />
-          }
+          <Redirect to={ROUTES.dashboard} />
         </Route>
         <Route path={ROUTES.register}>
-          {
-            uiStore.currentUser ?
-              <Redirect to={ROUTES.dashboard} />
-              :
-              <Register />
-          }
+          <Register />
         </Route>
         <Route path={ROUTES.registerpilot}>
           <RegisterPilot />
