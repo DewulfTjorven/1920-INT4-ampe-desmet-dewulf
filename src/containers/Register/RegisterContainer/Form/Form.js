@@ -4,15 +4,14 @@ import RegisterForm from "./RegisterForm/RegisterForm"
 
 
 import style from "./Form.module.css";
-import signin from "../../../../img/signin.png";
+import constructor from "../../../../img/constructor.svg";
 
 
 const Form = () => {
   return (
     <div className={style.form}>
-        <img src={signin} width="50px"alt="lock"></img>
-
-        <RegisterForm />
+      <img src={constructor} height="55px" width="35px" alt="lock"></img>
+      <RegisterForm />
     </div>
   );
 };

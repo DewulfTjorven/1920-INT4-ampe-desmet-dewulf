@@ -1,39 +1,37 @@
 .container{
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: auto;
-  padding-top: 3rem;
+  margin-top: 5vw;
 }
 
 .pilot__button{
-  width: 30rem;
+  width: 40rem;
   height: 10rem;
   border: solid 2px white;
   margin-top: 2rem;
   padding: 2rem;
   display: flex;
   justify-content: center;
-
-}
-
-.pilot__button img{
-  padding-right: 2rem;
-
+  border-radius: .3rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, .4);
+  background-color: rgba(33, 69, 87, .75);
 }
 
 .pilot__title{
   font-size: 2.4rem;
   color: white;
-
 }
 
 .pilot__line{
   height: .2rem;
   width: 4.5rem;
   background-color: #FEC74F;
-  margin-bottom: 1.3rem;
   margin-top: 1rem;
+  margin-bottom: .3rem;
+}
 
+.pilot__content {
+  margin-left: 3rem;
+  align-self: flex-end;
 }
