@@ -19,7 +19,7 @@ class MapComponent extends Component {
       <ReactMapGL  {...this.state.viewport} 
         onViewportChange={(viewport => this.setState(viewport))} 
         mapboxApiAccessToken="pk.eyJ1IjoidGpvcnZlbjAxIiwiYSI6ImNrYnIxMG40cTAwOHEyd281aGxwdTZ5MngifQ.xwH-xbZIV8lNbOCBdNg3lw" 
-        mapStyle="mapbox://styles/mapbox/outdoors-v11">
+        mapStyle="mapbox://styles/mapbox/dark-v10">
       </ReactMapGL>
     </div>
     );
