@@ -34,10 +34,13 @@ const RegisterForm = () => {
     });
 
     const result = await uiStore.registerUser(user);
-    console.log(result);
 
-    if (result) {
+    if (result.uid) {
+      // Gebruiker is correct geregistreerd
       history.push(ROUTES.dashboard);
+    } else {
+      // Registratie mislukt
+      console.log(result);
     }
   };
 

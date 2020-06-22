@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-//import { ROUTES } from "../../consts";
+import { useHistory } from "react-router-dom";
+import { ROUTES } from "../../consts";
 
 import { useStores } from "../../hooks/useStores"
 
@@ -9,14 +10,16 @@ import largeIcon from "../../img/ui_profile.svg"
 
 const ProfileHeading = (user) => {
   const userItem = user.user;
+  const history = useHistory();
 
   const { uiStore } = useStores();
 
   const handleLogout = e => {
     e.preventDefault();
-    // Voorlopige logout
+
+    // Log 
     const result = uiStore.logoutUser();
-    console.log(result);
+    history.push(ROUTES.login)
   };
 
   return (

@@ -24,14 +24,15 @@ class AuthService {
         }
     };
 
-    register = async (name, email, password) => {
-        console.log(name, email, password);
+    register = async (name, email, password, avatar) => {
+        //console.log(name, email, password);
         try {
             const userCredential = await this.auth.createUserWithEmailAndPassword(email, password);
             if (userCredential) {
                 try {
                     await userCredential.user.updateProfile({
-                        displayName: name
+                        displayName: name,
+                        photoUrl: avatar
                     });
                 } catch (error) {
                     return error.code;
