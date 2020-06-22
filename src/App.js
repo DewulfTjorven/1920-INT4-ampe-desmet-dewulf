@@ -4,6 +4,7 @@ import Landing from "./containers/Landing/Landing";
 import Dashboard from "./containers/Dashboard/Dashboard";
 import Signin from "./containers/Signin/Signin";
 import Register from "./containers/Register/Register";
+import RegisterPilot from "./containers/RegisterPilot/RegisterPilot";
 
 
 import { Switch, Route } from "react-router-dom";
@@ -26,6 +27,9 @@ function App() {
         </Route>
         <Route path={ROUTES.register}>
           <Register />
+        </Route>
+        <Route path={ROUTES.registerpilot}>
+          <RegisterPilot />
         </Route>
       </Switch>
 

@@ -1,0 +1,36 @@
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5vw;
+}
+
+.constructor__button{
+  width: 40rem;
+  height: 10rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  border-radius: .3rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, .4);
+  background-color: white;
+}
+
+.constructor__title{
+  font-size: 2.4rem;
+  color: #214557;
+}
+
+.constructor__line{
+  height: .2rem;
+  width: 4.5rem;
+  background-color: #FEC74F;
+  margin-top: 1rem;
+  margin-bottom: .3rem;
+}
+
+.constructor__content {
+  margin-left: 3rem;
+  align-self: flex-end;
+}
