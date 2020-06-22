@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ROUTES } from "../../../../consts";
+//import { ROUTES } from "../../../../consts";
 
 import style from "./Profile.module.css";
 
