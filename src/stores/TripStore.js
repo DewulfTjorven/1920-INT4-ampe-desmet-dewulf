@@ -1,20 +1,18 @@
 import { decorate, observable, action } from "mobx";
+import TripService from "../services/TripService";
 
 class TripStore {
   constructor(rootStore) {
     this.rootStore = rootStore;
+    this.tripService = new TripService(this.rootStore.firebase);
     this.trips = [];
   }
 
   getTripById = id => this.trips.find(trip => trip.id === id);
 
-
-
-  searchTrip = trip => {
-    this.trips.forEach(trip => {
-
-    });
-  };
+  createTrip = async trip => {
+    return await this.tripService.create(trip);
+  }
 
   addTrip = trip => {
     this.trips.push(trip);
