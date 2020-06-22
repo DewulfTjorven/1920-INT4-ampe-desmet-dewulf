@@ -10,13 +10,20 @@ import hero from "../../../../img/hero.png";
 
 const HeaderContainer = () => {
 
-  let [count, setCount] = useState(0);
-  let titles = ["Explore The world with family & friends" , "Discover new places", "interact with locals"];
+  var [count, setCount] = useState(0);
+  const titles = ["Explore The world with family & friends" , "Discover new places", "interact with locals"];
+  const length = titles.length;
+  var i = 0;
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCount(count++);
-    }, 5000);
+        setCount(count++);
+        i++;
+        if(i === length){
+          i = 0;
+          count = 0;
+        }
+    }, 6000);
     return () => clearInterval(interval);
   }, []);
 
