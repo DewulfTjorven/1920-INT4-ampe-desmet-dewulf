@@ -11,15 +11,14 @@ import CreateTrip2 from "./containers/CreateTrip/Step2/CreateTrip2";
 import CreateTrip3 from "./containers/CreateTrip/Step3/CreateTrip3";
 
 
-
-
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import { ROUTES } from "./consts";
-//import { useStores } from "./hooks/useStores";
+import { useStores } from "./hooks/useStores";
+import { useObserver } from "mobx-react-lite";
 
 function App() {
-  //const store = useStores();
-  return (
+  const { uiStore } = useStores();
+  return useObserver(() => (
     <>
       <Switch>
         <Route exact path={ROUTES.home}>
@@ -35,13 +34,28 @@ function App() {
           <CreateTrip3 />
         </Route>
         <Route path={ROUTES.dashboard}>
-          <Dashboard />
+          {
+            uiStore.currentUser ?
+              <Dashboard />
+              :
+              <Redirect to={ROUTES.login} />
+          }
         </Route>
         <Route path={ROUTES.login}>
-          <Signin />
+          {
+            uiStore.currentUser ?
+              <Redirect to={ROUTES.dashboard} />
+              :
+              <Signin />
+          }
         </Route>
         <Route path={ROUTES.register}>
-          <Register />
+          {
+            uiStore.currentUser ?
+              <Redirect to={ROUTES.dashboard} />
+              :
+              <Register />
+          }
         </Route>
         <Route path={ROUTES.registerpilot}>
           <RegisterPilot />
@@ -50,7 +64,7 @@ function App() {
       </Switch>
 
     </>
-  );
+  ));
 }
 
 export default App;
