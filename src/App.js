@@ -6,6 +6,12 @@ import Signin from "./containers/Signin/Signin";
 import Register from "./containers/Register/Register";
 import RegisterPilot from "./containers/RegisterPilot/RegisterPilot";
 
+import CreateTrip1 from "./containers/CreateTrip/Step1/CreateTrip1";
+import CreateTrip2 from "./containers/CreateTrip/Step2/CreateTrip2";
+import CreateTrip3 from "./containers/CreateTrip/Step3/CreateTrip3";
+
+
+
 
 import { Switch, Route } from "react-router-dom";
 import { ROUTES } from "./consts";
@@ -19,6 +25,15 @@ function App() {
         <Route exact path={ROUTES.home}>
           <Landing />
         </Route>
+        <Route path={ROUTES.create1}>
+          <CreateTrip1 />
+        </Route>
+        <Route path={ROUTES.create2}>
+          <CreateTrip2 />
+        </Route>
+        <Route path={ROUTES.create3}>
+          <CreateTrip3 />
+        </Route>
         <Route path={ROUTES.dashboard}>
           <Dashboard />
         </Route>
@@ -31,6 +46,7 @@ function App() {
         <Route path={ROUTES.registerpilot}>
           <RegisterPilot />
         </Route>
+
       </Switch>
 
     </>
