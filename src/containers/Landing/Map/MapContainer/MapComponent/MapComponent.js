@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import ReactMapGL from 'react-map-gl';
-import style from "./MapComponent.module.css";
 
 class MapComponent extends Component {
 
   state = {
     viewport: {
-      width: "40rem",
-      height: "40rem",
+      width: "100vw",
+      height: "100vh",
       latitude: 42.430472,
       longitude: -123.334102,
       zoom: 10
