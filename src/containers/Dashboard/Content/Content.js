@@ -46,7 +46,7 @@ const Content = () => {
           <Cockpit user={user} />
         </Route>
         <Route path={ROUTES.certificate}>
-          <Certificate/>
+          <Certificate user={user} />
         </Route>
 
       </Switch>

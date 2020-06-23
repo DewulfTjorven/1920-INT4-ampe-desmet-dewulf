@@ -15,7 +15,7 @@ const ROUTES = {
   register: "/register",
   registerPilot: "/registerpilot",
   dashboardProfile: { path: "/dashboard/profile", to: "/dashboard/profile" },
-  certificate: "/certificate",
+  dashboardCertificate: "/dashboard/certificate",
 };
 
 export { ROUTES };
