@@ -13,40 +13,40 @@ import { ROUTES } from "../../../consts";
 
 
 const Content = () => {
-    const { uiStore } = useStores();
+  const { uiStore } = useStores();
 
-    // De huidige user ophalen
-    const user = uiStore.currentUser;
-    console.log(user);
+  // De huidige user ophalen
+  const user = uiStore.currentUser;
+  console.log(user);
 
-    return (
-        <>
-            <Switch>
-                <Route exact path={ROUTES.dashboard}>
-                    <Redirect to={ROUTES.dashboardHome} />
-                </Route>
-                <Route exact path={ROUTES.dashboardHome}>
-                    <Home user={user} />
-                </Route>
-                <Route path={ROUTES.dashboardProfile.path}>
-                    <Profile user={user} />
-                </Route>
-                <Route path={ROUTES.dashboardTrips}>
-                    <Trips user={user} />
-                </Route>
-                <Route path={ROUTES.dashboardTripDetail.path}>
-                    <TripDetail user={user} />
-                </Route>
-                <Route path={ROUTES.dashboardMap}>
-                    <Map user={user} />
-                </Route>
-                <Route path={ROUTES.dashboardCockpit}>
-                    <Cockpit user={user} />
-                </Route>
+  return (
+    <>
+      <Switch>
+        <Route exact path={ROUTES.dashboard}>
+          <Redirect to={ROUTES.dashboardHome} />
+        </Route>
+        <Route exact path={ROUTES.dashboardHome}>
+          <Home user={user} />
+        </Route>
+        <Route path={ROUTES.dashboardProfile.path}>
+          <Profile user={user} />
+        </Route>
+        <Route path={ROUTES.dashboardTrips}>
+          <Trips user={user} />
+        </Route>
+        <Route path={ROUTES.dashboardTripDetail.path}>
+          <TripDetail user={user} />
+        </Route>
+        <Route path={ROUTES.dashboardMap}>
+          <Map user={user} />
+        </Route>
+        <Route path={ROUTES.dashboardCockpit}>
+          <Cockpit user={user} />
+        </Route>
 
-            </Switch>
-        </>
-    );
+      </Switch>
+    </>
+  );
 };
 
 export default Content;
