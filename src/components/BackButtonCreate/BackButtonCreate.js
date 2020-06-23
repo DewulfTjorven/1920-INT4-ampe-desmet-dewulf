@@ -4,10 +4,11 @@ import React from "react";
 
 
 import style from "./BackButtonCreate.module.css";
+import { Link } from "react-router-dom";
 
 const BackButtonCreate = (props) => {
   return (
-    <button className={style.button}>{props.cta}</button>
+    <Link to={props.route} className={style.button}>{props.cta}</Link>
   );
 };
 

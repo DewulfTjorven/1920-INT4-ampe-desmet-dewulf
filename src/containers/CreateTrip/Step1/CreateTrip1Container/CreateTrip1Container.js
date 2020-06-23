@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 
 
 const CreateTrip1Container = (props) => {
+
   return (
     <div className={style.container}>
       <div className={style.location__container}>
@@ -30,7 +31,7 @@ const CreateTrip1Container = (props) => {
       <div className={style.create}>
         <h1 className={style.title}>Creating a trip</h1>
         <ul className={style.parts}>
-          <li><Link className={style.part}><div className={style.number}>1</div><p className={style.text}>Location</p></Link></li>
+          <li><Link to={ROUTES.dashboardMap} className={style.part}><div className={style.number}>1</div><p className={style.text}>Location</p></Link></li>
           <div className={style.line}></div>
           <li><Link className={style.part}><div className={style.number}>2</div><p className={style.text}>Info</p></Link></li>
           <div className={`${style.line} ${style.line__hidden}`}></div>
@@ -39,7 +40,7 @@ const CreateTrip1Container = (props) => {
           <li><Link className={`${style.part} ${style.part__hidden}`}><div className={`${style.number} ${style.number__hidden}`}>4</div><p className={style.text}>Share</p></Link></li>
         </ul>
         <h2 className={style.subtitle}>Tell us a bit more about <span className={style.subtitle__color}>this trip</span></h2>
-        <CreateTrip1Form />
+        <CreateTrip1Form trip={props.trip} />
       </div>
     </div>
   );

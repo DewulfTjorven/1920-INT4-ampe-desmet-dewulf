@@ -30,16 +30,16 @@ const CreateTrip2Container = (props) => {
       <div className={style.create}>
         <h1 className={style.title}>Creating a trip</h1>
         <ul className={style.parts}>
-          <li><Link className={style.part}><div className={style.number}>1</div><p className={style.text}>Location</p></Link></li>
+          <li><Link to={ROUTES.dashboardMap} className={style.part}><div className={style.number}>1</div><p className={style.text}>Location</p></Link></li>
           <div className={style.line}></div>
-          <li><Link className={style.part}><div className={style.number}>2</div><p className={style.text}>Info</p></Link></li>
+          <li><Link to={ROUTES.create1} className={style.part}><div className={style.number}>2</div><p className={style.text}>Info</p></Link></li>
           <div className={style.line}></div>
-          <li><Link className={style.part}><div className={style.number}>3</div><p className={style.text}>Time</p></Link></li>
+          <li><Link to={""} className={style.part}><div className={style.number}>3</div><p className={style.text}>Time</p></Link></li>
           <div className={`${style.line} ${style.line__hidden}`}></div>
-          <li><Link className={`${style.part} ${style.part__hidden}`}><div className={`${style.number} ${style.number__hidden}`}>4</div><p className={style.text}>Share</p></Link></li>
+          <li><Link to={""} className={`${style.part} ${style.part__hidden}`}><div className={`${style.number} ${style.number__hidden}`}>4</div><p className={style.text}>Share</p></Link></li>
         </ul>
         <h2 className={style.subtitle}>How long do you want <span className={style.subtitle__color}>to fly</span>?</h2>
-        <CreateTrip2Form />
+        <CreateTrip2Form trip={props.trip} />
       </div>
     </div>
   );

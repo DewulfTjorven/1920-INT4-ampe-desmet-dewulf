@@ -7,10 +7,10 @@ import style from "./CreateTrip2.module.css";
 
 import CreateTrip2Container from "./CreatTrip2Container/CreateTrip2Container";
 
-const CreateTrip2 = () => {
+const CreateTrip2 = (props) => {
   return (
     <div className={style.container}>
-      <CreateTrip2Container />
+      <CreateTrip2Container trip={props.trip} />
     </div>
   );
 };

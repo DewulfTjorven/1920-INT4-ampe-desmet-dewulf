@@ -9,10 +9,25 @@ import uiArrow from "../../../../img/ui_arrowblue.svg"
 import BackButtonCreate from "../../../../components/BackButtonCreate/BackButtonCreate";
 import TextInputCreate from "../../../../components/TextInputCreate/TextInputCreate";
 
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import { useStores } from "../../../../hooks/useStores";
 
 
 const CreateTrip3Container = (props) => {
+  const { tripStore } = useStores();
+  const history = useHistory();
+
+  const tripId = props.trip.tripId;
+
+  if (tripId) {
+    const tripsjebroer = tripStore.getTripById(tripId);
+    console.log(tripsjebroer);
+  } else {
+    console.log(`geen id`);
+    history.push(ROUTES.create2);
+  }
+
+
   return (
     <div className={style.container}>
       <div className={style.location__container}>
@@ -42,14 +57,14 @@ const CreateTrip3Container = (props) => {
         <h2 className={style.subtitle}><span className={style.subtitle__color}>All set.</span><br></br>Invite your friends</h2>
         <p>Share your trip code and invite other people via e-mail!</p>
         <label className={style.label}>Trip code
-          <input className={style.input} value="45-724-DC"></input>
+          <input className={style.input} value={tripId}></input>
         </label>
         <TextInputCreate label="Send invitations via e-mail" />
         <button className={style.send}>Send</button>
         <div className={style.button__container}>
-          <BackButtonCreate cta="go back" />
-          <Link className={`${style.navbar_link} ${style.navbar_link_create}`} to={ROUTES.dashboardTrips}>
-            Go to trips
+          <BackButtonCreate route={ROUTES.dashboardHome} cta="Dashboard" />
+          <Link to={ROUTES.dashboardTripDetail.to + tripId} className={`${style.navbar_link} ${style.navbar_link_create}`} to={ROUTES.dashboardTrips}>
+            Go to trip
           <img src={uiArrow} width="20px" alt="Arrow icon"></img>
           </Link>
         </div>

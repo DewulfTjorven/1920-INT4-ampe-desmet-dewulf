@@ -21,21 +21,25 @@ class TripStore {
 
   createTrip = async trip => {
     // Trip date voorlopig ingesteld op huidige datum
-    trip.date = getCurrentTimeStamp();
+    //trip.date = getCurrentTimeStamp();
 
     // Trip owner instellen
     trip.ownerId = this.rootStore.uiStore.currentUser.id;
+
+    const boek = trip.id;
 
     //  Create  trip in Firestore
     const newTripRef = await this.tripService.create(trip);
 
     // Id instellen van Firebase document id
-    trip.id = newTripRef.id;
+    trip.id = await newTripRef.id;
 
     // Huidige gebruiker toevoegen als member van trip
-    await this.TripService.addMemberToTrip(trip.id, this.rootStore.uiStore.currentUser);
+    await this.tripService.addMemberToTrip(trip.id, this.rootStore.uiStore.currentUser);
 
     trip.linkUser(this.rootStore.uiStore.currentUser);
+
+    return trip.id;
   }
 
   getTripById = id => this.trips.find(trip => trip.id === id);
@@ -63,7 +67,9 @@ class TripStore {
 decorate(TripStore, {
   trips: observable,
   empty: action,
-  addGroup: action,
-  addUser: action,
+  addTrip: action,
+  createTrip: action,
+  getTripById: action,
+  getTrips: action,
 });
 export default TripStore;

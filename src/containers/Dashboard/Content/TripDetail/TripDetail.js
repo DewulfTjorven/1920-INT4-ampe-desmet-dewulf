@@ -23,6 +23,7 @@ const TripDetail = (props) => {
     // Trip ophalen op ID
     console.log(id);
     const trip = tripStore.getTripById(id);
+    console.log(trip);
 
     return (
         <>
