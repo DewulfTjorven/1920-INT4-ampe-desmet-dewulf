@@ -13,7 +13,7 @@ const Travel = () => {
     <div className={style.container} id="yourAnchorTag">
       <TravelContainer />
       <img src={island1} alt="Island with Statue of Liberty" className={style.island1}></img>
-      <img src={island2} alt="Island with Statue of Liberty" className={style.island2}></img>
+      <img src={island2} alt="Island with Colosseum" className={style.island2}></img>
     </div>
   );
 };

@@ -6,8 +6,21 @@
 }
 
 .cards {
+  padding-top: 17vh;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  z-index: 999;
 }
+
+@media only screen and (min-width: 1640px) { 
+  .cards {
+    padding-top: 25vh;
+  }
+}
+
+@media only screen and (min-width: 1440px) { 
+  .cards {
+    padding-top: 20vh;
+  }
+}
+

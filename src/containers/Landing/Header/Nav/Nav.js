@@ -19,11 +19,11 @@ const Nav = () => {
               Home
           </NavLink>
             </li>
-            <li><NavLink className={style.nav__item__link} to={ROUTES.login}>
+            <li><NavLink className={style.nav__item__link} to={ROUTES.home}>
               Travel
           </NavLink>
             </li>
-            <li><NavLink className={style.nav__item__link} to={ROUTES.login}>
+            <li><NavLink className={style.nav__item__link} to={ROUTES.home}>
               Map
           </NavLink>
             </li>

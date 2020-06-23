@@ -23,7 +23,40 @@
 
 .island2{
   position: absolute;
-  right: -20rem;
+  right: -17rem;
   top: -10rem;
   width: 40rem;
 }
+
+@media only screen and (min-width: 1440px) { 
+  .island1 {
+    width: 70rem;
+  }
+
+  .island2 {
+    width: 42rem;
+    right: -10rem;
+  }
+}
+
+@media only screen and (min-width: 1540px) { 
+  .island1 {
+    width: 70rem;
+  }
+
+  .island2 {
+    width: 45rem;
+    right: -10rem;
+  }
+}
+
+@media only screen and (min-width: 1640px) { 
+  .island1 {
+    width: 80rem;
+  }
+
+  .island2 {
+    right: -3rem;
+  }
+}
+
