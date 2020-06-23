@@ -9,7 +9,15 @@ class TripStore {
     this.trips = [];
   }
 
-  getTripById = id => this.trips.find(trip => trip.id === id);
+  onTripsChanged = trip => {
+    this.addTrip(trip);
+  }
+
+  getTrips = async () => {
+    //
+    const result = await this.tripService.getTripsForMember(this.rootStore.uiStore.currentUser.id, this.onTripsChanged);
+    console.log(result);
+  }
 
   createTrip = async trip => {
     // Trip date voorlopig ingesteld op huidige datum
@@ -29,6 +37,8 @@ class TripStore {
 
     trip.linkUser(this.rootStore.uiStore.currentUser);
   }
+
+  getTripById = id => this.trips.find(trip => trip.id === id);
 
   addTrip = trip => {
     this.trips.push(trip);

@@ -17,13 +17,13 @@ const ProfileHeading = (user) => {
   const handleLogout = e => {
     e.preventDefault();
 
-    // Log 
-    const result = uiStore.logoutUser();
+    // Logout user
+    uiStore.logoutUser();
     history.push(ROUTES.login)
   };
 
   return (
-    <Link onClick={handleLogout}>
+    <Link to="" onClick={handleLogout}>
       <div className={style.container}>
         <img className={style.profilePicture} src={userItem.avatar} alt="Profile"></img>
         <p className={style.profileName}>{userItem.name}</p>

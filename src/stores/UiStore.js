@@ -20,9 +20,13 @@ class UiStore {
         store: this.rootStore.userStore,
         avatar: user.photoURL
       }));
+
+      // Trips ophalen voor ingelogde user
+      this.rootStore.tripStore.getTrips();
+
     } else {
       console.log(`user is uitgelogd`);
-
+      this.rootStore.tripStore.empty();
       this.setCurrentUser(undefined);
     }
   }

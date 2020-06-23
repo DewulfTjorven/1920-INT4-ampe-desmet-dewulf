@@ -3,6 +3,8 @@ import React from "react";
 import { useStores } from "../../../../hooks/useStores";
 import { ROUTES } from "./../../../../consts";
 
+import { useObserver } from "mobx-react-lite";
+
 import style from "./Dashboard_trips.module.css";
 
 import ProfileHeading from "../../../../components/ProfileHeading/ProfileHeading";
@@ -13,9 +15,11 @@ import CardTripOptions from "../../../../components/CardTripOptions/CardTripOpti
 const Trips = (props) => {
     const { tripStore } = useStores();
 
+    console.log(tripStore.trips)
+
     const currentUser = props.user;
 
-    return (
+    return useObserver(() => (
         <>
             <div className={style.container}>
 
@@ -52,7 +56,7 @@ const Trips = (props) => {
                 </section>
             </div>
         </>
-    );
+    ));
 };
 
 export default Trips;

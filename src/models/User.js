@@ -14,11 +14,11 @@ class User {
       this.avatar = `https://avatars.dicebear.com/v2/avataaars/${this.id}.svg`;
     }
 
-    if (!store) {
+    /*if (!store) {
       throw new Error("voorzie een store");
     }
     this.store = store;
-    this.store.addUser(this);
+    this.store.addUser(this);*/
 
     this.email = email;
     this.password = password;

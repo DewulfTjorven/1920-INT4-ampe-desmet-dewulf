@@ -15,7 +15,7 @@ class Trip {
 
     this.users = users;
 
-    if (!store) {
+    /*if (!store) {
       throw new Error("voorzie een store");
     }
     this.store = store;
@@ -23,7 +23,7 @@ class Trip {
 
     this.users.forEach(user => {
       user.linkTrip(this);
-    });
+    });*/
   }
 
   //linkMessage(message) {
@@ -52,7 +52,8 @@ const tripConverter = {
       name: trip.name,
       date: trip.date,
       flightTime: trip.flightTime,
-      ownerId: trip.ownerId,
+      locationId: trip.locationId,
+      ownerId: trip.ownerId
     };
   },
   fromFirestore: function (snapshot, options) {
@@ -62,6 +63,7 @@ const tripConverter = {
       name: data.name,
       date: data.date,
       flightTime: data.flightTime,
+      locationId: data.locationId,
       ownerId: data.ownerId
     })
   }
