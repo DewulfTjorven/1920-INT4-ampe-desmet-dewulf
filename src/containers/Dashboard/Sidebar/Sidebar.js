@@ -12,7 +12,7 @@ import iconTrips from "../../../img/trips.svg";
 import iconMap from "../../../img/worldwhite.svg";
 import iconCockpit from "../../../img/pilot.svg";
 
-import uiArrow from "../../../img/ui_arrow.png";
+import uiArrow from "../../../img/ui_arrowblue.svg";
 
 
 
@@ -46,7 +46,7 @@ const Sidebar = () => {
                             </NavLink>
           </li>
           <li className={style.navbar_li}>
-            <NavLink className={`${style.navbar_link} ${style.navbar_link_create}`} to={ROUTES.dashboardMap}>
+            <NavLink className={`${style.navbar_linkcreate} ${style.navbar_link} ${style.navbar_link_create}`} to={ROUTES.dashboardMap}>
               Create trip
                             <img src={uiArrow} width="20px" alt="Arrow icon"></img>
             </NavLink>

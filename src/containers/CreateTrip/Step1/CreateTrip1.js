@@ -1,15 +1,16 @@
 import React from "react";
-import { ROUTES } from "../../../consts";
-
+//import { ROUTES } from "../../../consts";
 
 
 import style from "./CreateTrip1.module.css";
 
-const CreateTrip1 = (props) => {
+
+import CreateTrip1Container from "./CreateTrip1Container/CreateTrip1Container";
+
+const CreateTrip1 = () => {
   return (
-    <div>
-      <p>Trip1</p>
-      <p>koekenbar</p>
+    <div className={style.container}>
+      <CreateTrip1Container />
     </div>
   );
 };

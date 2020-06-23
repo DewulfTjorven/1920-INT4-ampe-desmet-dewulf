@@ -1,13 +1,17 @@
 import React from "react";
-import { ROUTES } from "../../../consts";
-
+//import { ROUTES } from "../../../consts";
 
 
 import style from "./CreateTrip2.module.css";
 
-const CreateTrip2 = (props) => {
+
+import CreateTrip2Container from "./CreatTrip2Container/CreateTrip2Container";
+
+const CreateTrip2 = () => {
   return (
-    <div>Trip2</div>
+    <div className={style.container}>
+      <CreateTrip2Container />
+    </div>
   );
 };
 

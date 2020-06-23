@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.number {
+  background-color: #FEC74F;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #214557;
+  font-family: Cubano, Arial, Helvetica;
+  font-size: 1.8rem;
+}
+
+.text {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-top: .8rem;
+}
+
+.part {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 6rem;
+}
+
+.parts {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.line {
+  height: .2rem;
+  width: 13.1rem;
+  background-color: #FEC74F;
+  margin-top: 1.5rem;
+}
+
+.title {
+  font-size: 6rem;
+  margin-bottom: 3rem;
+}
+
+.subtitle {
+  font-size: 4rem;
+  width: 60rem;
+  margin-bottom: 3rem;
+}
+
+.subtitle__color {
+  color: #FEC74F;
+}
+
+.location {
+  font-size: 4rem;
+  font-family: Cubano, Arial, Helvetica, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.locationline {
+  height: .2rem;
+  width: 5rem;
+  background-color: white;
+  margin-top: 1rem;
+}
+
+.location__container {
+  margin-left: 15rem;
+}
+
+.coordinates {
+  color: #FEC74F;
+  font-weight: bold;
+  display: flex;
+  font-size: 2rem;
+}
+
+.coordinate__east {
+  margin-left: 2rem;
+}
+
+.create {
+  margin-right: 15rem;
+}
+
+.navbar_logo {
+  position: absolute;
+  top: 5rem;
+}
+
+/* hidden parts */
+.part__hidden {
+  opacity: .25;
+}
+
+.number__hidden {
+  border: white solid .2rem;
+  background-color: transparent;
+  color: white;
+}
+
+.line__hidden {
+  background-color: white;
+  opacity: .25;
+}
+
+
+@media only screen and (max-width: 1340px) { 
+  .create {
+    margin-right: 5rem;
+  }
+
+  .location__container {
+    margin-left: 5rem;
+  }
+
+}
