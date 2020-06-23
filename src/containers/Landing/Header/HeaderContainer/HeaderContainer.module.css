@@ -10,3 +10,14 @@
 .hero{
   margin-top: -10rem;
 }
+
+.hero__image {
+  width: 80rem;
+}
+
+@media only screen and (min-width: 1640px) { 
+  .hero__image {
+    width: 90rem;
+    margin-left: -20rem;
+  }
+}

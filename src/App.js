@@ -5,7 +5,6 @@ import Dashboard from "./containers/Dashboard/Dashboard";
 import Signin from "./containers/Signin/Signin";
 import Register from "./containers/Register/Register";
 import RegisterPilot from "./containers/RegisterPilot/RegisterPilot";
-import Certificate from "./containers/Certificate/Certificate";
 import CreateTrip from "./containers/CreateTrip/CreateTrip";
 
 
@@ -40,10 +39,6 @@ function App() {
 
         <Route path={ROUTES.registerpilot}>
           <RegisterPilot />
-        </Route>
-
-        <Route path={ROUTES.certificate}>
-          <Certificate />
         </Route>
 
       </Switch>
