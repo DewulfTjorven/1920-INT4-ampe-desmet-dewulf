@@ -26,8 +26,8 @@
 
 .arrow {
   position: absolute;
-  right: 22rem;
-  bottom: 5rem;
+  right: 5vw;
+  bottom: 8rem;
 }
 
 .line {
@@ -38,4 +38,16 @@
 
 .part {
   color: white;
+}
+
+@media only screen and (min-width: 1440px) { 
+  .arrow{
+    right: 10vw;
+  }
+}
+
+@media only screen and (min-width: 1540px) { 
+  .arrow{
+    right: 15vw;
+  }
 }
