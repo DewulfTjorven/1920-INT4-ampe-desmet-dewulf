@@ -1,0 +1,59 @@
+/* file input */
+.wrapper {
+  margin-bottom: 1rem;
+}
+
+[type="file"] {
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}
+
+label::before {
+  content: url("../../../../../../img/cross.svg");
+  width: 1.6rem;
+  margin-right: 1.5rem;
+  margin-left: -3rem;
+}
+
+.choose {
+  font-size: 1.8rem;
+}
+
+[type="file"] + label {
+  border-radius: .3rem;
+  background: rgba(255, 255, 255, 0.15);;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+	font-family: Avenir, Arial, Helvetica, sans-serif;
+	font-size: inherit;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 1.4rem 5rem;
+  position: relative;
+  transition: all 0.3s;
+  vertical-align: middle;
+  height: 4rem;
+  width: 35rem;
+
+  &:hover {
+    background-color: darken(#f15d22, 10%);
+  }
+  
+  &.btn-1 {
+    background-color: #f79159;
+    box-shadow: 0 6px darken(#f79159, 10%);
+    transition: none;
+
+    &:hover {
+      box-shadow: 0 4px darken(#f79159, 10%);
+      top: 2px;
+    }
+  }
+}
+/* end file input */
+
