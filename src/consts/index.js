@@ -14,8 +14,8 @@ const ROUTES = {
   login: "/login",
   register: "/register",
   registerPilot: "/registerpilot",
+  dashboardProfile: { path: "/dashboard/profile", to: "/dashboard/profile" },
   certificate: "/certificate",
-  dashboardProfile: { path: "/dashboard/profile", to: "/dashboard/profile" }
 };
 
 export { ROUTES };

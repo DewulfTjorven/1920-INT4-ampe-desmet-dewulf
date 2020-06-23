@@ -17,7 +17,7 @@ function App() {
   return useObserver(() => (
     <>
       <Switch>
-
+        
         <Route exact path={ROUTES.home}>
           <Landing />
         </Route>

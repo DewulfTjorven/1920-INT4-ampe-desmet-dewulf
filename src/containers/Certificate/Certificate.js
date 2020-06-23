@@ -9,7 +9,7 @@ import style from "./Certificate.module.css";
 const Certificate = () => {
   return (
     <div className={style.container}>
-
+      
     </div>
   );
 };

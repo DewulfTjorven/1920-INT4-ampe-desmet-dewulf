@@ -23,7 +23,7 @@ const HeaderContainer = () => {
           i = 0;
           count = 0;
         }
-    }, 6000);
+    }, 4000);
     return () => clearInterval(interval);
   }, []);
 
