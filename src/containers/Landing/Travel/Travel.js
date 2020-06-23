@@ -10,7 +10,7 @@ import island2 from "../../../img/island2.png";
 
 const Travel = () => {
   return (
-    <div className={style.container}>
+    <div className={style.container} id="yourAnchorTag">
       <TravelContainer />
       <img src={island1} alt="Island with Statue of Liberty" className={style.island1}></img>
       <img src={island2} alt="Island with Statue of Liberty" className={style.island2}></img>

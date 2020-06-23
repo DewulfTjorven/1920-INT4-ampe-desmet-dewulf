@@ -1,4 +1,5 @@
 import React , {useEffect, useState }from "react";
+import { HashLink as Link } from 'react-router-hash-link';
 // import { ROUTES } from "../../consts";
 
 
@@ -35,7 +36,9 @@ const NavBottom = () => {
         <div className={style.line}></div>
       </div>
       <div className={style.arrow}>
+        <Link to="#yourAnchorTag">
         <img src={arrow} width="18px" height="62px" alt="arrow"></img>
+        </Link>
       </div>
     </div>
   );
