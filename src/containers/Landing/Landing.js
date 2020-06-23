@@ -3,6 +3,7 @@ import React from "react";
 
 import Header from "./Header/Header";
 import Travel from "./Travel/Travel";
+import Map from "./Map/Map";
 
 
 const Landing = () => {
@@ -11,6 +12,7 @@ const Landing = () => {
     <>
       <Header />
       <Travel />
+      <Map />
     </>
   );
 };

@@ -21,7 +21,7 @@ const TripItem = ({ trip, detailRoute }) => {
       <p className={style.tripName}>{trip.name}</p>
       <p className={style.tripLocation}>Taiwan</p>
       <p className={style.tripPilot}>Pilot</p>
-      <p className={style.tripDate}>{trip.date}</p>
+      <p className={style.tripDate}>datum</p>
 
       <button className={style.selectTripButton}>
         View more<img src={uiArrow} alt="Arrow icon"></img>

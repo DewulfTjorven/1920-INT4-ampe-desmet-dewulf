@@ -21,7 +21,7 @@ const LatestTrips = () => {
 
             <div className={style.tripsContainer}>
                 {trips.map(trip => (
-                    <TripItemSmall trip={trip} detailRoute={ROUTES.dashboardTripDetail.to} />
+                    <TripItemSmall key={trip.id} trip={trip} detailRoute={ROUTES.dashboardTripDetail.to} />
                 ))}
             </div>
 

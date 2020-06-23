@@ -13,11 +13,9 @@ import CreateTrip3 from "./containers/CreateTrip/Step3/CreateTrip3";
 
 import { Switch, Route, Redirect } from "react-router-dom";
 import { ROUTES } from "./consts";
-import { useStores } from "./hooks/useStores";
 import { useObserver } from "mobx-react-lite";
 
 function App() {
-  const { uiStore } = useStores();
   return useObserver(() => (
     <>
       <Switch>

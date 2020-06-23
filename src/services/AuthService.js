@@ -24,7 +24,7 @@ class AuthService {
         }
     };
 
-    register = async (name, email, password, avatar) => {
+    register = async (name, avatar, email, password,) => {
         //console.log(name, email, password);
         try {
             const userCredential = await this.auth.createUserWithEmailAndPassword(email, password);

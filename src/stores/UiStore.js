@@ -20,9 +20,13 @@ class UiStore {
         store: this.rootStore.userStore,
         avatar: user.photoURL
       }));
+
+      // Trips ophalen voor ingelogde user
+      this.rootStore.tripStore.getTrips();
+
     } else {
       console.log(`user is uitgelogd`);
-
+      this.rootStore.tripStore.empty();
       this.setCurrentUser(undefined);
     }
   }
@@ -40,6 +44,18 @@ class UiStore {
 
   registerUser = async (user) => {
     const result = await this.authService.register(user.name, user.avatar, user.email, user.password);
+    const registeredUser = new User({
+      id: result.uid,
+      name: result.displayName,
+      avatar: result.photoURL,
+      store: this.rootStore.userStore,
+      email: result.email
+    })
+    if (result) {
+      //User toevoegen aan user collectie
+      console.log(user);
+      this.rootStore.userStore.createUser(registeredUser);
+    }
     return result;
   }
 
