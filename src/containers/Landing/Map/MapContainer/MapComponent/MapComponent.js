@@ -10,8 +10,10 @@ class MapComponent extends Component {
       latitude: 42.430472,
       longitude: -123.334102,
       zoom: 10
-    }
+    },
   };
+
+
 
   render(){
     return(

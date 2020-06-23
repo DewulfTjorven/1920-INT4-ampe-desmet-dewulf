@@ -1,49 +1,12 @@
 .container{
-  margin-left: 15rem;
-  margin-top: 7.5rem;
-
+  max-width: 120rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  height: 70vh;
+  padding-top: 6rem;
 }
 
-.hero {
-  margin-top: -30rem;
-  margin-left: 60rem;
-}
-
-.hero__image {
-  width: 87.4rem;
-  height: 72.8rem;
-  z-index: -1;
-}
-
-@media only screen and (max-width: 1600px) { 
-  .hero {
-    margin-left: 45rem;
-  }
-
-}
-
-@media only screen and (max-width: 1550px) { 
-  .hero {
-    margin-left: 45rem;
-  }
-
-}
-
-@media only screen and (max-width: 1470px) { 
-  .hero__image {
-    width: 69.9rem;
-    height: 58.2rem;
-  }
-
-  .hero {
-    margin-top: -27rem;
-  }
-
-}
-
-@media only screen and (max-width: 1300px) { 
-  .hero__image {
-    width: 55.9rem;
-    height: 46.6rem;
-  }
+.hero{
+  margin-top: -10rem;
 }

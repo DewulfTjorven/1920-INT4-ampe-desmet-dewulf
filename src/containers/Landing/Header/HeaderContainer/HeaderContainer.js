@@ -34,7 +34,7 @@ const HeaderContainer = () => {
         text="Discover the world through a live bird’s eye view.
         View your favourite spots or discover new ones online, with your friends, family or people you meet online." />
       <div className={style.hero}>
-        <img className={style.hero__image} src={hero} height="728px" width="874px" alt="Island with people and drone view"></img>
+        <img className={style.hero__image} src={hero} width="800px" alt="Island with people and drone view"></img>
       </div>
     </div>
   );

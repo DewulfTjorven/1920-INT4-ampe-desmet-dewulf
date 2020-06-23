@@ -1,8 +1,10 @@
 .nav {
-  margin: -6rem 15rem 0 15rem;
+  max-width: 120rem;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 4rem;
 }
 
 .nav__item {
@@ -13,7 +15,6 @@
   align-items: center;
   line-height: 2.5rem;
   letter-spacing: .05rem;
-
 }
 
 .nav__item__links {
@@ -28,13 +29,6 @@
 
 .nav__item__link__selected {
   font-family: AvenirBlack, Arial, Helvetica, sans-serif;
-}
-
-.nav__logo {
-  display: flex;
-  justify-content: center;
-  padding-top: 5rem;
-
 }
 
 .signin {

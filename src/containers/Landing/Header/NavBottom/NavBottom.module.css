@@ -1,8 +1,7 @@
 .container {
-  position: absolute;
-  bottom: 6rem;
-  left: 15rem;
-  display: flex;
+  max-width: 120rem;
+  margin: auto;
+  position: relative;
 }
 
 .usp__list {
@@ -31,7 +30,9 @@
 }
 
 .arrow {
-  margin-left: 56vw;
+  position: absolute;
+  right: 0;
+  bottom: -2rem;
 }
 
 .line {

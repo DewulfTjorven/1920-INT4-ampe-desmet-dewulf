@@ -5,8 +5,25 @@
   font-family: Avenir, Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   line-height: 1.3;
+  position: relative;
+  z-index: -1;
 }
 
 .content__text {
   font-weight: bold;
+}
+
+.island1{
+  position: absolute;
+  left: -1rem;
+  bottom: 2rem;
+  width: 60rem;
+  z-index: -99;
+}
+
+.island2{
+  position: absolute;
+  right: -20rem;
+  top: -10rem;
+  width: 40rem;
 }

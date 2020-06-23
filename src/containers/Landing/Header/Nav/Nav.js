@@ -12,9 +12,6 @@ import logo from "../../../../img/logo.png";
 const Nav = () => {
   return (
     <div className={style.container}>
-      <div className={style.nav__logo}>
-        <NavLink to={ROUTES.home}><img className={style.nav__logo__img} src={logo} width="92px" height="64px" alt="drone-logo"></img></NavLink>
-      </div>
       <div className={style.nav}>
         <div className={style.nav__item}>
           <ul className={style.nav__item__links}>
@@ -31,6 +28,9 @@ const Nav = () => {
           </NavLink>
             </li>
           </ul>
+        </div>
+        <div className={style.nav__item}>
+          <NavLink to={ROUTES.home}><img className={style.nav__logo__img} src={logo} width="92px" height="64px" alt="drone-logo"></img></NavLink>
         </div>
         <div className={style.nav__item}>
           <NavLink className={style.signin} to={ROUTES.login}>Sign in</NavLink>
