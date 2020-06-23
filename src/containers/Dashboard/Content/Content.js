@@ -6,6 +6,8 @@ import TripDetail from "./TripDetail/TripDetail";
 import Map from "./Map/Map";
 import Cockpit from "./Cockpit/Cockpit";
 import Profile from "./Profile/Profile";
+import Certificate from "./Certificate/Certificate";
+
 
 import { useStores } from "../../../hooks/useStores";
 import { Switch, Route, Redirect } from "react-router-dom";
@@ -42,6 +44,9 @@ const Content = () => {
         </Route>
         <Route path={ROUTES.dashboardCockpit}>
           <Cockpit user={user} />
+        </Route>
+        <Route path={ROUTES.certificate}>
+          <Certificate/>
         </Route>
 
       </Switch>
