@@ -12,8 +12,9 @@ class LocationStore {
         this.addLocation(location);
     }
 
-    getLocations = async () => {
-        //
+    getAllLocations = async () => {
+        const result = await this.locationService.getAllLocations(this.onLocationsChanged);
+        console.log(result);
     }
 
     createLocation = async location => {
@@ -22,10 +23,6 @@ class LocationStore {
 
     addLocation = location => {
         this.locations.push(location);
-    };
-
-    addUser = (user, location) => {
-        location.linkUser(user);
     };
 
     empty() {

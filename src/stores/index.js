@@ -1,6 +1,7 @@
 import UiStore from "./UiStore";
 import UserStore from "./UserStore";
 import TripStore from "./TripStore";
+import LocationStore from "./LocationStore";
 
 import * as firebase from "firebase/app";
 
@@ -21,6 +22,7 @@ class RootStore {
 
     this.userStore = new UserStore(this);
     this.tripStore = new TripStore(this);
+    this.locationStore = new LocationStore(this);
     this.uiStore = new UiStore(this);
   }
 }
