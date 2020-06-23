@@ -18,7 +18,9 @@
 }
 
 .usp__list__item {
-  margin-right: 4rem;
+  color: #FEC74F;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .usp__list__item__number {
@@ -37,13 +39,6 @@
 
 .line {
   height: .2rem;
-  width: 42rem;
+  width: 6rem;
   background-color: white;
-}
-
-@media only screen and (max-width: 1440px) { 
-  .arrow {
-    margin-left: 45vw;
-  }
-
 }
