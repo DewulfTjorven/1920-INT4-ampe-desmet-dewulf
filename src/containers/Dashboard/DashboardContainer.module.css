@@ -3,3 +3,7 @@
   background-color: #FEFAF9;
   height: 100vh;
 }
+
+.hidden {
+  display: none;
+}
