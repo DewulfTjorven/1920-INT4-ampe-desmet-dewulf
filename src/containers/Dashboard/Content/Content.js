@@ -19,7 +19,6 @@ const Content = () => {
 
   // De huidige user ophalen
   const user = uiStore.currentUser;
-  console.log(user);
 
   return (
     <>
@@ -40,7 +39,7 @@ const Content = () => {
           <TripDetail user={user} />
         </Route>
         <Route path={ROUTES.dashboardMap}>
-          <Map user={user} />
+          <Map routes={ROUTES} user={user} />
         </Route>
         <Route path={ROUTES.dashboardCockpit}>
           <Cockpit user={user} />

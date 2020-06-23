@@ -21,6 +21,8 @@ class LocationStore {
         //
     }
 
+    getLocationById = id => this.locations.find(location => location.id === id);
+
     addLocation = location => {
         this.locations.push(location);
     };
@@ -31,11 +33,11 @@ class LocationStore {
 
 }
 decorate(LocationStore, {
-    trips: observable,
+    locations: observable,
     empty: action,
-    addTrip: action,
-    createTrip: action,
-    getTripById: action,
-    getTrips: action,
+    addLocation: action,
+    createLocation: action,
+    getLocationById: action,
+    getLocations: action,
 });
 export default LocationStore;
