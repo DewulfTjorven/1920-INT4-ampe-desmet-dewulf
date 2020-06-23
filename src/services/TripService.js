@@ -14,6 +14,34 @@ class TripService {
         return tripRef;
     }
 
+    getTrip = async tripId => {
+        return await this.db
+            .collection("trips")
+            .doc(tripId)
+            .withConverter(tripConverter)
+            .get();
+    }
+
+    addMemberToTrip = async (tripId, member) => {
+        console.log(member);
+        return await this.db
+            .collection("trips")
+            .doc(tripId)
+            .collection("members")
+            .doc()
+            .withConverter(userConverter)
+            .set(member);
+    }
+
+    getMembersFromTrip = async tripId => {
+        return await this.db
+            .collection("trips")
+            .doc(tripId)
+            .collection("members")
+            .withConverter(userConverter)
+            .get();
+    }
+
 }
 
 export default TripService;

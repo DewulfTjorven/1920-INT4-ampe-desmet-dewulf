@@ -1,5 +1,6 @@
 import { decorate, observable, action } from "mobx";
 import TripService from "../services/TripService";
+import { getCurrentTimeStamp } from "./"
 
 class TripStore {
   constructor(rootStore) {
@@ -11,7 +12,22 @@ class TripStore {
   getTripById = id => this.trips.find(trip => trip.id === id);
 
   createTrip = async trip => {
-    return await this.tripService.create(trip);
+    // Trip date voorlopig ingesteld op huidige datum
+    trip.date = getCurrentTimeStamp();
+
+    // Trip owner instellen
+    trip.ownerId = this.rootStore.uiStore.currentUser.id;
+
+    //  Create  trip in Firestore
+    const newTripRef = await this.tripService.create(trip);
+
+    // Id instellen van Firebase document id
+    trip.id = newTripRef.id;
+
+    // Huidige gebruiker toevoegen als member van trip
+    await this.TripService.addMemberToTrip(trip.id, this.rootStore.uiStore.currentUser);
+
+    trip.linkUser(this.rootStore.uiStore.currentUser);
   }
 
   addTrip = trip => {

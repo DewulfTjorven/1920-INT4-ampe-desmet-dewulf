@@ -25,4 +25,9 @@ class RootStore {
   }
 }
 
+const getCurrentTimeStamp = () => {
+  return firebase.firestore.Timestamp.now();
+}
+export { getCurrentTimeStamp };
+
 export default RootStore;
