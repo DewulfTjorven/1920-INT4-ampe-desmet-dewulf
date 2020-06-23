@@ -1,7 +1,7 @@
 import React from "react";
 
 //import style from "./Dashboard_trips.module.css";
-import { Switch, Route, Redirect, useParams } from "react-router-dom";
+import { Redirect, useParams } from "react-router-dom";
 
 const CreateTrip = (props) => {
 

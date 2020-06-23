@@ -1,6 +1,5 @@
 import { decorate, observable, action } from "mobx";
 import TripService from "../services/TripService";
-import { getCurrentTimeStamp } from "./"
 
 class TripStore {
   constructor(rootStore) {
