@@ -3,7 +3,7 @@
   align-items: center;
 
   position: absolute;
-  right: 2rem;
+  right: 3rem;
   top: 6rem;
   z-index: 100;
 }
@@ -23,5 +23,13 @@
 }
 
 .largeIcon{
-  margin-left: 1rem;
+  margin-left: 1.2rem;
+  width: 1.9rem;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.largeIcon:hover{
+  transform: scale(1.1);
+  color: black;
 }
