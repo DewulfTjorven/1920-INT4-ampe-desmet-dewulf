@@ -49,6 +49,7 @@ const RegisterForm = () => {
     <div className={style.login}>
       <h1 className={style.title}>Create an account</h1>
       <div className={style.line}></div>
+      <p className={style.text}>Create an account and start planning your journey!</p>
       <form onSubmit={handleRegisterTraveller}>
         <div className={style.name}>
           <TextInputAuthShort label="Voornaam" name="name" value={name} onChange={e => setName(e.currentTarget.value)} />

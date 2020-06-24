@@ -36,7 +36,7 @@ const NavBottom = () => {
         <div className={style.line}></div>
       </div>
       <div className={style.arrow}>
-        <Link to="#yourAnchorTag">
+        <Link to="#travel">
           <img src={arrow} width="18px" height="62px" alt="arrow"></img>
         </Link>
       </div>

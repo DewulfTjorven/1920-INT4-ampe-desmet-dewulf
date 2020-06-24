@@ -18,7 +18,7 @@ const Nav = () => {
           <ul className={style.nav__item__links}>
             <li><NavLink className={`${style.nav__item__link} ${style.nav__item__link__selected}`} to={ROUTES.home}>
               Home
-          </NavLink>
+          </NavLink><div className={style.line}></div>
             </li>
             <li><NavLink className={style.nav__item__link} to={ROUTES.home}>
               Travel

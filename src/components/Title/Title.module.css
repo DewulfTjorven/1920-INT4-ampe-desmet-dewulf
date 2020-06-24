@@ -7,7 +7,6 @@
   letter-spacing: .1rem;
   font-family: Cubano, Arial, Helvetica, sans-serif;
   color: white;
-  width: 57.5rem;
 }
 
 .span {
@@ -23,19 +22,51 @@
   letter-spacing: .05rem;
 }
 
-@media only screen and (max-width: 1440px) { 
-  .container {
-    width: 45rem;
+@media only screen and (min-width: 1441px) { 
+
+  .title {
+    width: 60rem;
   }
+}
+
+@media only screen and (max-width: 1440px) { 
 
   .title {
     width: 50rem;
   }
+}
+
+@media only screen and (max-width: 1240px) { 
+  .container {
+    margin: 0 5rem;
+  }
+
+  .title {
+    font-size: 4rem;
+    width: 40rem;
+  }
 
 }
 
-@media only screen and (max-width: 1300px) { 
+@media only screen and (max-width: 990px) { 
+
   .container {
-    width: 35rem;
+    text-align: center;
+  }
+
+  .title {
+    width: 40rem;
+    margin: 0 auto;
   }
 }
+
+@media only screen and (max-width: 600px) { 
+  .text {
+    padding-top: 1.5rem;
+    width: 40rem;
+    margin: 0 auto;
+    font-size: 1.4rem;
+  }
+}
+
+

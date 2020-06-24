@@ -15,24 +15,35 @@
   align-items: center;
   line-height: 2.5rem;
   letter-spacing: .05rem;
+  z-index: 5;
 }
 
 .nav__item__links {
   display: flex;
+  width: 32.8rem;
 }
 
 .nav__item__link {
   margin-right: 5rem;
   color: white;
+
 }
 
 .nav__item__link__selected {
-  font-family: AvenirBlack, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.line {
+  margin-top: .7rem;
+  height: .2rem;
+  width: 2.5rem;
+  background-color: #FEC74F;
+
 }
 
 .signin {
   z-index: 1;
-  font-family: AvenirBlack, Arial, Helvetica, sans-serif;
+  font-weight: bold;
   color: white;
   text-decoration: none;
 }
@@ -41,3 +52,36 @@
   margin: 0 2rem
 }
 
+
+@media only screen and (max-width: 1240px) { 
+  .container {
+    margin: 0 5rem;
+  }
+}
+
+
+@media only screen and (max-width: 900px) { 
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav__item {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .nav__item__links {
+    display: flex;
+    justify-content: space-between;
+    width: 25rem;
+  }
+
+  .nav__item__link {
+    margin-right: 0;
+  }
+
+  .signin__or {
+    margin-top: 1rem;
+  }
+}
