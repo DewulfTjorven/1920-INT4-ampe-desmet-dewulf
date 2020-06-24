@@ -21,7 +21,7 @@ const LocationCard = (props) => {
     <div className={style.container} onClick={clickLocation}>
       <img className={style.locationPicture} src={locationPicture} alt="Location"></img>
       <p className={style.locationName}>{location.name}</p>
-      <LooseButtonRight cta="View more" />
+      <LooseButtonRight link={ROUTES.dashboardMapDetail.to + location.id} cta="View more" />
     </div>
   );
 };
