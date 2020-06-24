@@ -2,6 +2,7 @@ import { createContext } from "react";
 import RootStore from "../stores";
 import User from "../models/User";
 import Trip from "../models/Trip";
+import Location from "../models/Location";
 
 const store = new RootStore();
 
@@ -12,16 +13,38 @@ const u1 = new User({
   avatar: "https://randomuser.me/api/portraits/women/22.jpg"
 });
 
-new Trip({
+const tripsje = new Trip({
   id: "9969c1fc-0f51-3d3f-b687-d0835a081078",
   name: "Reismannetje's trip",
-  date: "17 / 11 / 20",
+  date: "2020-07-01",
   tripCode: "10-047-AB",
-  flightTime: "25:00",
+  flightTime: "25",
+  locationId: "3d3f-b687-d0835a081078",
   store: store.tripStore,
+  ownerId: "9969c1fc-0f51-3d3f-b687-d0835a081078",
+  pilotId: "9969c1fc-0f51-3d3f-b687-d0835a081078"
 });
 
+const locationtje = new Location({
+  id: "3d3f-b687-d0835a081078",
+  name: "Locatietje",
+  ownerId: "9969c1fc-0f51-3d3f-b687-d0835a081078",
+  spotCount: "30",
+  radius: "10",
+  trip: tripsje,
+  coordinates: "52°22'38.155 N4°52'14.976 E"
+})
+
 store.uiStore.setCurrentUser(u1);
+
+store.userStore.addUser(u1);
+
+store.tripStore.addTrip(tripsje);
+store.tripStore.addUser(u1, tripsje);
+
+store.locationStore.addLocation(locationtje);
+
+console.log(store.locationStore.locations)
 
 window.store = store;
 

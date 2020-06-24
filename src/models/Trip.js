@@ -2,7 +2,7 @@ import { decorate, observable, action } from "mobx";
 import { v4 } from "uuid";
 
 class Trip {
-  constructor({ id = v4(), name, date, tripCode, flightTime, locationId, spots = [], users = [], store, ownerId }) {
+  constructor({ id = v4(), name, date, tripCode, flightTime, locationId, spots = [], users = [], store, pilotId, ownerId }) {
     this.id = id;
     this.name = name;
     this.date = date;
@@ -10,6 +10,7 @@ class Trip {
     this.flightTime = flightTime;
     this.locationId = locationId;
     this.ownerId = ownerId;
+    this.pilotId = pilotId;
 
     this.spots = spots;
 

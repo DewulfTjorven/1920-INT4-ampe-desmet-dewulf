@@ -1,0 +1,28 @@
+.time {
+  padding: 1.5rem;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+  border-radius: .3rem;
+  margin-bottom: 20rem;
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  width: 50%;
+}
+
+
+.time__number {
+  margin-right: 1.5rem;
+}
+
+.pilot__label {
+  color: #FEC74F;
+  font-family: Cubano, Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.number {
+  color: #002A3F;
+  font-family: Cubano, Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+}
