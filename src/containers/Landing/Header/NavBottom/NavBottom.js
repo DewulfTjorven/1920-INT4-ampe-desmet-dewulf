@@ -23,7 +23,7 @@ const NavBottom = () => {
         i = 0;
         count = 0;
       }
-    }, 5500);
+    }, 4000);
     return () => clearInterval(interval);
   }, []);
 

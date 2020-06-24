@@ -11,7 +11,7 @@ const Certificate = () => {
   return (
     <div className={style.container}>
       <Link className={style.back}>
-        <img className={style.arrow} src={arrow}></img>Go back
+        <img className={style.arrow} src={arrow} alt="Arrow icon"></img>Go back
       </Link>
       <CertificateContainer />
     </div>

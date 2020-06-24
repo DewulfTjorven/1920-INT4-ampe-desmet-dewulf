@@ -1,0 +1,211 @@
+.hidden {
+  display: none;
+}
+
+.container {
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  color: #002A3F;
+  font-size: 1.6rem;
+  width: 75%;
+  margin: 0 auto;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 3fr 2rem 2fr;
+  grid-template-rows: 5rem 1fr 1fr 4fr 4fr 5rem;
+  grid-gap: 1.5rem;
+}
+
+.header {
+  grid-row: 2;
+}
+
+.available__title {
+  grid-row: 3;
+  grid-column: 1 / 4;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.available__container {
+  grid-row: 4 / 6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+.my {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.my__title {
+  grid-column: 3;
+  grid-row: 3;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.add {
+  grid-row: 5;
+  grid-column: 3;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+  border-radius: .3rem;
+  padding: 3rem 1.5rem;
+  align-self: center;
+}
+
+.title {
+  font-family: Cubano, Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+}
+
+.title__highlight {
+  color: #FEC74F;
+}
+
+.subtitle {
+  font-size: 3rem;
+}
+
+.number {
+  font-weight: bold;
+}
+
+.line {
+  margin-top: 1rem;
+  width: 4rem;
+  height: .2rem;
+  background-color: #FEC74F;
+}
+
+.line__dark {
+  background-color: #002A3F;
+  height: .2rem;
+  width: 4rem;
+  margin-top: 1rem;
+}
+
+.location {
+  font-family: Cubano, Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-size: 3rem;
+}
+
+.part {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.part__container {
+  padding: 0 1.5rem;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+  border-radius: .3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.accept {
+  margin-top: 1.5rem;
+  height: 4rem;
+  width: 12rem;
+  background-color: #002A3F;
+  color: white;
+  border: none;
+  border-radius: .3rem;
+  font-family: Cubano, Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  cursor: pointer;
+  align-self: center;
+}
+
+.spot {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: .3rem;
+}
+
+.coordinates {
+  margin-top: 1rem;
+  display: flex;
+  color: #FEC74F;
+  font-weight: bold;
+}
+
+.coordinate__right {
+  margin-left: 2rem;
+}
+
+.spot__name {
+  font-family: Cubano, Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+}
+
+.show {
+  margin-top: 0;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.step__number {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.text__wrapper {
+  margin-top: .5rem;
+  margin-left: 2rem;
+}
+
+.text__first {
+  margin-left: .4rem;
+}
+
+.step__first {
+  margin-top: 1.5rem;
+}
+
+.back {
+  width: 3rem;
+}
+
+/* button */
+.button{
+  margin-top: 2rem;
+  border: none;
+  background: none;
+  font-family: Cubano;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+  color: #002A3F;
+}
+
+.button:hover{
+  cursor: pointer;
+  color: #012030;
+}
+
+.button>img{
+  margin-right: 1rem;
+  transition: all 0.2s;
+  width: 2rem;
+  position: relative;
+}
+
+.button:hover>img{
+  margin-right: 0rem;
+}

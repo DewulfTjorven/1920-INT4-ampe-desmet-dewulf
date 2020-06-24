@@ -12,40 +12,39 @@ import style from "./Dashboard_home.module.css";
 
 const Home = (props) => {
 
-    const currentUser = props.user;
+  const currentUser = props.user;
 
-    return (
-        <>
-            <div className={style.container}>
+  return (
+    <>
+      <div className={style.container}>
 
-                <ProfileHeading user={currentUser} />
+        <ProfileHeading user={currentUser} />
 
-                <section>
-                    <h1 className={style.title__hidden}>Dashboard</h1>
-                    <p className={style.welcome_back}>Welcome back, <span className={style.welcome_back__name}>{currentUser.name}</span></p>
-                    <p className={style.ready}><span className={style.span__yellow}>Ready</span> to travel?</p>
-                    <p className={style.dashboard_description}>Create your trip, train your pilotting skills, discover locations and so much more..</p>
-                </section>
+        <section>
+          <p className={style.welcome_back}>Welcome back, <span className={style.welcome_back__name}>{currentUser.name}</span></p>
+          <p className={style.ready}><span className={style.span__yellow}>Ready</span> to travel?</p>
+          <p className={style.dashboard_description}>Create your trip, train your pilotting skills, discover locations and so much more..</p>
+        </section>
 
 
-                <div className={style.dashboard_content__container}>
+        <div className={style.dashboard_content__container}>
 
-                    <CardStatistics />
+          <CardStatistics />
 
-                    <div className={style.cardTripOptions}>
-                        <CardTripOptions />
-                    </div>
+          <div className={style.cardTripOptions}>
+            <CardTripOptions />
+          </div>
 
-                    <CardUpcoming />
+          <CardUpcoming />
 
-                    <CardFeatured />
+          <CardFeatured />
 
-                    <LatestTrips />
+          <LatestTrips />
 
-                </div>
-            </div>
-        </>
-    );
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default Home;
