@@ -1,6 +1,6 @@
 import React from "react";
 
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { ROUTES } from "../../../consts";
 
 import style from "./Dashboard_sidebar.module.css";
@@ -46,10 +46,10 @@ const Sidebar = () => {
                             </NavLink>
           </li>
           <li className={style.navbar_li}>
-            <NavLink className={`${style.navbar_linkcreate} ${style.navbar_link} ${style.navbar_link_create}`} to={ROUTES.dashboardMap}>
+            <Link className={`${style.navbar_linkcreate} ${style.navbar_link} ${style.navbar_link_create}`} to={ROUTES.dashboardMap}>
               Create trip
                             <img src={uiArrow} width="20px" alt="Arrow icon"></img>
-            </NavLink>
+            </Link>
           </li>
         </ul>
 

@@ -10,7 +10,7 @@ import Trip from "../../../../../models/Trip";
 import { useStores } from "../../../../../hooks/useStores";
 
 const CreateTrip2Form = (props) => {
-  const { tripStore } = useStores();
+  const { tripStore, userStore } = useStores();
 
   const history = useHistory();
 
@@ -34,17 +34,30 @@ const CreateTrip2Form = (props) => {
         flightTime: formData.flightTime,
         locationId: formData.locationId,
         date: formData.date,
-        store: tripStore
+        store: tripStore,
+        pilotId: "9969c1fc-0f51-3d3f-b687-d0835a081078",
+        ownerId: "9969c1fc-0f51-3d3f-b687-d0835a081078"
       });
+
+      // Submit trip hardcode naar store
+      tripStore.addTrip(t);
+      tripStore.addUser(userStore.users[0], t);
+      console.log(tripStore.trips);
+      props.trip.newTripId = t.id;
+      history.push(ROUTES.create3);
+
+
+      // Submit trip to firebase
       try {
-        const result = await tripStore.createTrip(t);
-        props.trip.tripId = result;
-        history.push(ROUTES.create3);
+        //const result = await tripStore.createTrip(t);
+        //props.trip.tripId = result;
+        //history.push(ROUTES.create3);
       } catch (error) {
-        console.log(error);
+        //console.log(error);
       }
+
     } else {
-      console.log(`Nie ingevuld alles`);
+      console.log(`Niet alle velden zijn ingevuld -> niet submitten`);
     }
   };
 

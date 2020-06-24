@@ -11,7 +11,7 @@ const CreateTrip1 = (props) => {
 
   return (
     <div className={style.container}>
-      <CreateTrip1Container trip={props.trip} />
+      <CreateTrip1Container location={props.location} function={props.function} trip={props.trip} />
     </div>
   );
 };

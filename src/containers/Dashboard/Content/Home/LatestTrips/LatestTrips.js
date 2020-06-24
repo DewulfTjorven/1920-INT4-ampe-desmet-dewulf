@@ -13,7 +13,7 @@ import LooseButtonWhite from "../../../../../components/LooseButton/LooseButtonW
 const LatestTrips = () => {
     const { tripStore } = useStores();
 
-    const trips = tripStore.trips.slice(1, 4);
+    const trips = tripStore.trips.slice(1, 3);
 
     return (
         <section className={style.dashboard_logtrips}>
