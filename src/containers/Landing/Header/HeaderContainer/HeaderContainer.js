@@ -16,7 +16,7 @@ const HeaderContainer = () => {
   const images = [hero, hero2, hero3];
   const titles = ["Explore The world with family & friends", "Discover new places", "interact with locals"];
   const text = [
-    "Discover the world through a live bird’s eye view. View your favourite spots or discover new ones online, with your friends, family or other someone you don’t even know.",
+    "Explore the world through a live bird’s eye view. View your favourite spots or discover new ones online, with your friends, family or other someone you don’t even know.",
     "Discover spots only know by locals. Hidden from mass tourism, these are the most know and popular places by choice of the locals. A monumant, a cozy bar or a hidden cave. The possibilities are endless.",
     "Interact with locals by pinning their spots. During tours, chat or talking is encouraged to re-imagine the social aspect associated with travel. Get talking!"
   ];
