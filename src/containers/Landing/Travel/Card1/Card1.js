@@ -1,9 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { ROUTES } from "../../../../consts";
-// import { ROUTES } from "../../consts";
-import Button from "../../../../components/Button/Button";
-
 
 
 import style from "./Card1.module.css";
@@ -41,7 +38,7 @@ const Card1 = () => {
       <div className={style.buttons}>
         <ul>
           <li>
-            <Button cta="Create an account" />
+            <Link className={style.create} to={ROUTES.register}>Create an account</Link>
           </li>
           <li className={style.signin}>
             <NavLink className={style.signin__link} to={ROUTES.login}>

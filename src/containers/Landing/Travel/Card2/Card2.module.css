@@ -27,3 +27,13 @@
   background-color: #FEC74F;
   margin-bottom: 1.3rem;
 }
+
+.explore {
+  font-family: Cubano, Arial, Helvetica, sans-serif;
+  color: #214557;
+  font-size: 1.8rem;
+}
+
+.arrow {
+  margin-left: 1rem;
+}

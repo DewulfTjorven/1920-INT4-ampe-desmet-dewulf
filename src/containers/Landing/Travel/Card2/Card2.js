@@ -1,11 +1,11 @@
 import React from "react";
-// import { ROUTES } from "../../consts";
-import Button from "../../../../components/Button/Button";
-
+import { ROUTES } from "../../../../consts";
+import { Link } from "react-router-dom";
 
 
 import style from "./Card2.module.css";
 import icon from "../../../../img/world.svg";
+import ui_arrowblue from "../../../../img/ui_arrowblue.svg"
 
 
 const Card2 = () => {
@@ -20,7 +20,7 @@ const Card2 = () => {
         </div>
       </div>
       <div className={style.buttons}>
-        <Button cta="Start Exploring" />
+        <Link className={style.explore} to={ROUTES.map}>Explore the map<img className={style.arrow} alt="ui arrow" src={ui_arrowblue}></img></Link>
       </div>
     </div>
   );

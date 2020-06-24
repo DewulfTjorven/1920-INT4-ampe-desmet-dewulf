@@ -52,3 +52,12 @@
   margin-left: 1rem;
   margin-top: .5rem;
 }
+
+.create {
+  margin-top: 1rem;
+  background-color: #FEC74F;
+  border-radius: .3rem;
+  padding: 1rem 3rem;
+  color: #214557;
+  font-family: Cubano, Arial, Helvetica, sans-serif;
+}
