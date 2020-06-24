@@ -9,7 +9,7 @@
 }
 
 .tripItemContainer>p{
-  font-family: Cubano;
+  font-family: Cubano, Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
   line-height: 4rem;
 }
@@ -31,7 +31,7 @@
   margin-right: 4rem;
   border: none;
   background: none;
-  font-family: Cubano;
+  font-family: Cubano, Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
   display: flex;
   align-items: center;

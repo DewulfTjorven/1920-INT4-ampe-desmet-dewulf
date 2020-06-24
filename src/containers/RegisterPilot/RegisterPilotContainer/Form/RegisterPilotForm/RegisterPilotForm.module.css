@@ -43,7 +43,12 @@
 .check {
   margin-top: -.05rem;
   margin-right: 1rem;
-  background: rgba(33, 69, 87, 0.1);;
+  background: rgba(57, 58, 58, 0.1);;
 }
 
-
+.text {
+  color: white;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}

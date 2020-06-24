@@ -6,7 +6,7 @@
 
 .statistic_container{
     text-align: center;
-    border-right: 0.3rem solid #FEC74F;
+    border-right: 0.2rem solid #FEC74F;
     font-weight: 600;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .statistic__name+p{
-    font-family: Cubano;
+    font-family: Cubano, Arial, Helvetica, sans-serif;
     font-size: 3.5rem;
     color: #FEC74F;
 }

@@ -40,14 +40,56 @@
   color: white;
 }
 
-@media only screen and (min-width: 1440px) { 
+@media only screen and (max-width: 1240px) { 
+  .usp__list {
+    margin-left: 5rem;
+  }
+
+  .arrow {
+    position: block;
+    right: 0;
+    margin-right: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1840px) { 
+  .arrow{
+    right: 14vw;
+  }
+}
+
+@media only screen and (max-width: 1640px) { 
+  .arrow{
+    right: 12vw;
+  }
+}
+
+@media only screen and (max-width: 1540px) { 
   .arrow{
     right: 10vw;
   }
 }
 
-@media only screen and (min-width: 1540px) { 
-  .arrow{
-    right: 15vw;
+@media only screen and (max-width: 1440px) { 
+  .arrow {
+    right: 7vw;
+  }
+}
+
+@media only screen and (max-width: 1370px) { 
+  .arrow {
+    right: 7vw;
+  }
+}
+
+@media only screen and (max-width: 1240px) { 
+  .arrow {
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) { 
+  .usp__list {
+    margin-top: -12rem;
   }
 }

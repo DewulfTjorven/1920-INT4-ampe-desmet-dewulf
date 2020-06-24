@@ -10,7 +10,7 @@
 
 .tripContainer>p{
     color: white;
-    font-family: Cubano;
+    font-family: Cubano, Arial, Helvetica, sans-serif;
 }
 
 .tripName+p{

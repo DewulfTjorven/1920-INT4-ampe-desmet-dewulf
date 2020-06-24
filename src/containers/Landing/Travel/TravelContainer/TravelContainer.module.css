@@ -12,15 +12,21 @@
   align-items: flex-end;
 }
 
-@media only screen and (min-width: 1640px) { 
+@media only screen and (max-width: 1120px) { 
   .cards {
-    padding-top: 25vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
-@media only screen and (min-width: 1440px) { 
+@media only screen and (max-width: 1120px) { 
   .cards {
-    padding-top: 20vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 }
+
 

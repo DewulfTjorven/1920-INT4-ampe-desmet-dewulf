@@ -28,29 +28,7 @@
   width: 40rem;
 }
 
-@media only screen and (min-width: 1440px) { 
-  .island1 {
-    width: 70rem;
-  }
-
-  .island2 {
-    width: 42rem;
-    right: -10rem;
-  }
-}
-
-@media only screen and (min-width: 1540px) { 
-  .island1 {
-    width: 70rem;
-  }
-
-  .island2 {
-    width: 45rem;
-    right: -10rem;
-  }
-}
-
-@media only screen and (min-width: 1640px) { 
+@media only screen and (min-width: 1641px) { 
   .island1 {
     width: 80rem;
   }
@@ -60,3 +38,44 @@
   }
 }
 
+@media only screen and (max-width: 1640px) { 
+  .island1 {
+    width: 80rem;
+  }
+
+  .island2 {
+    right: -3rem;
+  }
+}
+
+@media only screen and (max-width: 1440px) { 
+  .island1 {
+    width: 70rem;
+  }
+
+  .island2 {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 1240px) { 
+  .island1 {
+    width: 60rem;
+  }
+
+  .island2 {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: x) { 
+  .island1 {
+    width: 50rem;
+  }
+}
+
+@media only screen and (max-width: x) { 
+  .island2 {
+    margin-right: -1Orem;
+  }
+}

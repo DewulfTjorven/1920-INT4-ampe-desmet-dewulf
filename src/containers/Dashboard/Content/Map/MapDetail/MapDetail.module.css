@@ -1,10 +1,10 @@
 .detailContainer p{
-    font-family: Cubano;
+    font-family: Cubano, Arial, Helvetica, sans-serif;
     color: #002A3F;
 }
 
 .subtitle{
-    font-family: Cubano;
+    font-family: Cubano, Arial, Helvetica, sans-serif;
     font-size: 3rem;
     color: #002A3F;
 }
@@ -75,7 +75,7 @@ div+.subtitle{
 .link_create{
     color: #002A3F;
     background-color: #FEC74F;
-    font-family: Cubano;
+    font-family: Cubano, Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
