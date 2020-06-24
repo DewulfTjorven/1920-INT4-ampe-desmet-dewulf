@@ -24,6 +24,39 @@ const tripsje = new Trip({
   ownerId: "9969c1fc-0f51-3d3f-b687-d0835a081078",
   pilotId: "9969c1fc-0f51-3d3f-b687-d0835a081078"
 });
+const tripsje2 = new Trip({
+  id: "9969c1fc-0f51-3d3f-b687-d0835a081079",
+  name: "Reisman",
+  date: "2020-07-01",
+  tripCode: "10-047-AB",
+  flightTime: "25",
+  locationId: "3d3f-b687-d0835a081078",
+  store: store.tripStore,
+  ownerId: "9969c1fc-0f51-3d3f-b687-d0835a081078",
+  pilotId: "9969c1fc-0f51-3d3f-b687-d0835a081078"
+});
+const tripsje3 = new Trip({
+  id: "9969c1fc-0f51-3d3f-b687-d0835a081074",
+  name: "Broer",
+  date: "2020-07-01",
+  tripCode: "10-047-AB",
+  flightTime: "25",
+  locationId: "3d3f-b687-d0835a081078",
+  store: store.tripStore,
+  ownerId: "9969c1fc-0f51-3d3f-b687-d0835a081078",
+  pilotId: "9969c1fc-0f51-3d3f-b687-d0835a081078"
+});
+const tripsje4 = new Trip({
+  id: "Koeken",
+  name: "Reismannetje's trip",
+  date: "2020-07-01",
+  tripCode: "10-047-AB",
+  flightTime: "25",
+  locationId: "3d3f-b687-d0835a081078",
+  store: store.tripStore,
+  ownerId: "9969c1fc-0f51-3d3f-b687-d0835a081078",
+  pilotId: "9969c1fc-0f51-3d3f-b687-d0835a081078"
+});
 
 const locationtje = new Location({
   id: "3d3f-b687-d0835a081078",
@@ -40,7 +73,13 @@ store.uiStore.setCurrentUser(u1);
 store.userStore.addUser(u1);
 
 store.tripStore.addTrip(tripsje);
+store.tripStore.addTrip(tripsje2);
+store.tripStore.addTrip(tripsje3);
+store.tripStore.addTrip(tripsje4);
 store.tripStore.addUser(u1, tripsje);
+store.tripStore.addUser(u1, tripsje2);
+store.tripStore.addUser(u1, tripsje3);
+store.tripStore.addUser(u1, tripsje4);
 
 store.locationStore.addLocation(locationtje);
 
