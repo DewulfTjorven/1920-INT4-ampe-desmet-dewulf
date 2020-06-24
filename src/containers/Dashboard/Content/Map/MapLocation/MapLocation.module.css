@@ -1,0 +1,85 @@
+.title__hidden{
+    display: none;
+}
+
+.container{
+    margin-top: 6rem;
+}
+
+.subtitle{
+    font-family: Cubano;
+    font-size: 3rem;
+    color: #002A3F;
+}
+
+div+.subtitle{
+    margin-top: 3rem;
+}
+
+.link{
+    display: block;
+}
+
+.subtitle::after{
+    content: "";
+    display: block;
+    width: 4.2rem;
+    margin: 1rem 0;
+    height: 0.3rem;
+    margin-top: 1rem;
+    background-color: #FEC74F;
+}
+
+  .locationsContainer {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem;
+    grid-auto-flow: column;
+    grid-gap: 3rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  .tripOfTheDay{
+    margin-top: 3rem;
+    border-radius: 0.3rem;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    height: 18rem;
+    overflow: hidden;
+  }
+
+  .tripOfTheDay:hover{
+    opacity: 0.9;
+    cursor: pointer;
+  }
+
+  .subtitle+p{
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  .locationName{
+    color: white;
+    font-family: Cubano;
+    padding: 2rem;
+    font-size: 3.5rem;
+  }
+
+  .tripOfTheDay>div{
+    position: relative;
+    z-index: 100;
+  }
+
+  .tripOfTheDay>img{
+    position: relative;
+    z-index: -100;
+  }
+
+  .tripOfTheDay>div, .tripOfTheDay>img{
+      grid-row: 1;
+      grid-column: 1;
+      width: 100%;
+      height: 100%;
+  }

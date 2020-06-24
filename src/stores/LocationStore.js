@@ -37,7 +37,6 @@ decorate(LocationStore, {
     empty: action,
     addLocation: action,
     createLocation: action,
-    getLocationById: action,
     getLocations: action,
 });
 export default LocationStore;

@@ -18,14 +18,13 @@ const CreateTrip = (props) => {
         console.log(locationStore.locations);
 
         const result = locationStore.getLocationById(id);
+        console.log(result);
 
     }
 
     return (
         <>
-
             <Redirect to={ROUTES.create1} />
-
         </>
     );
 };

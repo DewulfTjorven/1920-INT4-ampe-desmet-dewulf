@@ -63,7 +63,7 @@ const CreateTrip3Container = (props) => {
         <button className={style.send}>Send</button>
         <div className={style.button__container}>
           <BackButtonCreate route={ROUTES.dashboardHome} cta="Dashboard" />
-          <Link to={ROUTES.dashboardTripDetail.to + tripId} className={`${style.navbar_link} ${style.navbar_link_create}`} to={ROUTES.dashboardTrips}>
+          <Link to={ROUTES.dashboardTripDetail.to + tripId} className={`${style.navbar_link} ${style.navbar_link_create}`}>
             Go to trip
           <img src={uiArrow} width="20px" alt="Arrow icon"></img>
           </Link>

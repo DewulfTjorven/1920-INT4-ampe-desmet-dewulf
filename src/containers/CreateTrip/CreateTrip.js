@@ -7,15 +7,14 @@ import CreateTrip1 from "./Step1/CreateTrip1";
 import CreateTrip2 from "./Step2/CreateTrip2";
 import CreateTrip3 from "./Step3/CreateTrip3";
 import CreateTripLocation from "./Location/Location";
-import { useStores } from "../../hooks/useStores";
+//import { useStores } from "../../hooks/useStores";
 
-import { observable, autorun } from "mobx"
 import { useObserver } from "mobx-react-lite";
 
 
 
 const CreateTrip = (props) => {
-    const { locationStore } = useStores();
+    //const { locationStore } = useStores();
 
     const trip = {
         name: "",
@@ -24,9 +23,7 @@ const CreateTrip = (props) => {
         locationId: ""
     }
 
-    const location = undefined;
-
-
+    //const location = undefined;
 
     const ROUTES = props.routes;
 

@@ -17,12 +17,10 @@ const Map = (props) => {
     const { locationStore } = useStores();
     const ROUTES = props.routes;
 
-
-
     const koekje = async () => {
         await locationStore.getAllLocations();
-        const locations = locationStore.locations;
-        console.log(locations);
+        //const locations = locationStore.locations;
+        //console.log(locations);
     }
     koekje();
 
@@ -39,7 +37,7 @@ const Map = (props) => {
                             <Redirect to={ROUTES.dashboardMapLocation} />
                         </Route>
                         <Route exact path={ROUTES.dashboardMapDetail}>
-                            <MapDetail routes={ROUTES} />
+                            <MapDetail locations={locationStore.locations} routes={ROUTES} />
                         </Route>
                         <Route exact path={ROUTES.dashboardMapLocation}>
                             <MapLocation routes={ROUTES} />

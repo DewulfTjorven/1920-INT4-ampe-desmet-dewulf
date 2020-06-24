@@ -2,18 +2,21 @@ import React from "react";
 // import { ROUTES } from "../../consts";
 import LooseButton from "../../../../../components/LooseButton/LooseButton";
 
-import pilotIcon from "../../../../../img/pilot.svg"
+import pilotIcon from "../../../../../img/icon_pilot__blue.svg";
+import areaIcon from "../../../../../img/icon_area__blue.svg";
+import spotIcon from "../../../../../img/icon_spots__blue.svg";
+
 
 
 import style from "./MapDetail.module.css";
 import { useStores } from "../../../../../hooks/useStores";
-import { useParams, useHistory, Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 import uiArrow from "../../../../../img/ui_arrow.png";
 import placeholder from "../../../../../img/location_placeholder.jpg";
 
 const MapDetail = (props) => {
-    const history = useHistory();
+    //const history = useHistory();
 
     const ROUTES = props.routes;
 
@@ -21,6 +24,7 @@ const MapDetail = (props) => {
 
     // ID ophalen uit url
     const { id } = useParams();
+    console.log(id);
 
     // Locatie ophalen op ID
     const location = locationStore.getLocationById(id);
@@ -45,21 +49,21 @@ const MapDetail = (props) => {
             <img className={style.locationImage} src={placeholder} alt="Detail location"></img>
 
             <div className={style.locationSpecContainer}>
-                <img src={pilotIcon} alt="pilot icon"></img>
+                <img className={style.smallIcon} src={pilotIcon} alt="pilot icon"></img>
                 <div>
                     <p className={style.locationSpecTitle}>pilot</p>
                     <p>pilotennaamman</p>
                 </div>
             </div>
             <div className={style.locationSpecContainer}>
-                <img src={pilotIcon} alt="explorable area icon"></img>
+                <img src={areaIcon} alt="explorable area icon"></img>
                 <div>
                     <p className={style.locationSpecTitle}>Explorable area</p>
                     <p>25 kilometers</p>
                 </div>
             </div>
             <div className={style.locationSpecContainer}>
-                <img src={pilotIcon} alt="spots in area icon"></img>
+                <img src={spotIcon} alt="spots in area icon"></img>
                 <div>
                     <p className={style.locationSpecTitle}>Spots in this area</p>
                     <p>35</p>

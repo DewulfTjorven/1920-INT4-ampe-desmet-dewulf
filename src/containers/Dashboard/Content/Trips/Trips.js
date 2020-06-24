@@ -15,7 +15,7 @@ import CardTripOptions from "../../../../components/CardTripOptions/CardTripOpti
 const Trips = (props) => {
     const { tripStore } = useStores();
 
-    console.log(tripStore.trips)
+    //console.log(tripStore.trips)
 
     const currentUser = props.user;
 
