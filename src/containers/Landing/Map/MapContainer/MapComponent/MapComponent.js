@@ -33,7 +33,7 @@ class MapComponent extends Component {
             width: "100vw",
             latitude: position.coords.latitude,
             longitude: position.coords.longitude,
-            zoom: 12
+            zoom: 11
         }
         this.setState({
             viewport: newViewport,
@@ -45,7 +45,7 @@ class MapComponent extends Component {
 
   render() {
     return (
-      <>
+      <div id="map">
       <button onClick={this.setUserLocation}>View spots close to you</button>
       <ReactMapGL 
         scrollZoom={false} 
@@ -69,7 +69,7 @@ class MapComponent extends Component {
         )}
 
       </ReactMapGL>
-      </>
+      </div>
     );
   }
 }

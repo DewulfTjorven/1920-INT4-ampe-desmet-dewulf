@@ -1,6 +1,7 @@
 import React from "react";
 // import { ROUTES } from "../../consts";
 import { NavLink } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import { ROUTES } from "../../../../consts";
 import Button from "../../../../components/Button/Button";
 
@@ -23,9 +24,9 @@ const Nav = () => {
               Travel
           </NavLink>
             </li>
-            <li><NavLink className={style.nav__item__link} to={ROUTES.home}>
+            <li><Link className={style.nav__item__link} to="#map">
               Map
-          </NavLink>
+          </Link>
             </li>
           </ul>
         </div>
