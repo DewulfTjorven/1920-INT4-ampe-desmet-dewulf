@@ -38,6 +38,7 @@ const Card1 = () => {
       <div className={style.buttons}>
         <ul>
           <li>
+
             <Link className={style.pilot__button} to={ROUTES.registerPilot}>Create an account</Link>
           </li>
           <li className={style.signin}>

@@ -34,8 +34,6 @@ class TripStore {
     // Huidige gebruiker toevoegen als member van trip
     await this.tripService.addMemberToTrip(trip.id, this.rootStore.uiStore.currentUser);
 
-    trip.linkUser(this.rootStore.uiStore.currentUser);
-
     return trip.id;
   }
 

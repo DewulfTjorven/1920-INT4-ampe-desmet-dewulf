@@ -30,14 +30,15 @@ const RegisterPilotForm = () => {
       surName: surName,
       store: userStore,
       email: email,
-      password: password
+      password: password,
+      isPilot: "true"
     });
 
     const result = await uiStore.registerUser(user);
     console.log(result);
 
     if (result) {
-      history.push(ROUTES.dashboard);
+      history.push(ROUTES.dashboardPilot);
     }
   };
 

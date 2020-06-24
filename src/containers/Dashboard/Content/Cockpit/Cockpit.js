@@ -4,7 +4,10 @@ import style from "./Cockpit.module.css";
 import ProfileHeading from "../../../../components/ProfileHeading/ProfileHeading"
 import uiArrow from "../../../../img/ui_arrowblue.svg"
 const Cockpit = (props) => {
+
+  console.log('Certificate');
   const currentUser = props.user;
+
   return (
     <div className={style.container}>
       <h2 className={style.hidden}>Pilot Cockpit</h2>

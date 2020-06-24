@@ -7,7 +7,9 @@
   padding: 1rem;
   font-family: Cubano, Arial, Helvetica, sans-serif;
   color: white;
-  z-index: 1;
-  background-color: rgba(33, 69, 87, .75);;
+  z-index: 1000;
+  background-color: rgba(33, 69, 87, .75);
+  cursor: pointer;
+  position: relative;
 }
 
