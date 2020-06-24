@@ -68,7 +68,7 @@ const locationtje = new Location({
   coordinates: "52°22'38.155 N4°52'14.976 E"
 })
 
-store.uiStore.setCurrentUser(u1);
+//store.uiStore.setCurrentUser(u1);
 
 store.userStore.addUser(u1);
 

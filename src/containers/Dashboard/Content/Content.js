@@ -20,18 +20,6 @@ const Content = () => {
   // De huidige user ophalen
   const user = uiStore.currentUser;
 
-
-  // Controleren als user een piloot is
-  if (user.isPilot === "true") {
-    // Doorsturen naar cockpit
-
-
-  } else {
-    // Doorsturen naar certificate pagina
-
-
-  }
-
   return (
     <>
       <Switch>
@@ -53,11 +41,11 @@ const Content = () => {
         <Route path={ROUTES.dashboardMap}>
           <Map routes={ROUTES} user={user} />
         </Route>
-        <Route path={ROUTES.dashboardPilotCockpit}>
-          <Cockpit user={user} />
-        </Route>
-        <Route path={ROUTES.certificate}>
+        <Route path={ROUTES.dashboardCertificate}>
           <Certificate user={user} />
+        </Route>
+        <Route path={ROUTES.dashboardCockpit}>
+          <Cockpit user={user} />
         </Route>
 
       </Switch>

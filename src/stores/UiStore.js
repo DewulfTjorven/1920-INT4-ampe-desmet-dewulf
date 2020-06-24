@@ -18,7 +18,8 @@ class UiStore {
         name: user.displayName,
         email: user.email,
         store: this.rootStore.userStore,
-        avatar: user.photoURL
+        avatar: user.photoURL,
+        isPilot: user.isPilot
       }));
 
       // Trips ophalen voor ingelogde user

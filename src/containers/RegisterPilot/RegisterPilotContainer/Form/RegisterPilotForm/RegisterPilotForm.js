@@ -22,7 +22,7 @@ const RegisterPilotForm = () => {
   const [password, setPassword] = useState("");
 
 
-  const handleRegisterTraveller = async (e) => {
+  const handleRegisterPilot = async (e) => {
     e.preventDefault();
 
     const user = new User({
@@ -38,7 +38,7 @@ const RegisterPilotForm = () => {
     console.log(result);
 
     if (result) {
-      history.push(ROUTES.dashboardPilot);
+      history.push(ROUTES.dashboardCertificate);
     }
   };
 
@@ -48,7 +48,7 @@ const RegisterPilotForm = () => {
       <h1 className={style.title}>Create an account</h1>
       <div className={style.line}></div>
       <p className={style.text}>Create an account and start sharing your unknown spots while flying a drone!</p>
-      <form onSubmit={handleRegisterTraveller}>
+      <form onSubmit={handleRegisterPilot}>
         <div className={style.name}>
           <TextInputAuthShortWhite label="Voornaam" name="name" value={name} onChange={e => setName(e.currentTarget.value)} />
           <TextInputAuthShortWhite label="Achternaam" name="surname" value={surName} onChange={e => setSurName(e.currentTarget.value)} />
