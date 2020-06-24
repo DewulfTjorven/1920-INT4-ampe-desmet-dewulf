@@ -22,3 +22,10 @@
     border-radius: 0.3rem;
     padding: 3rem;
 }
+
+.locationContainers{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60vh;
+}

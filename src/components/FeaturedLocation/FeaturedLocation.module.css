@@ -1,0 +1,59 @@
+.featuredLocation{
+  display: flex;
+  background-color: white;
+  border-radius: 0.3rem;
+  padding: 1.5rem;
+}
+
+.featuredLocation>img{
+  width: 40%;
+  margin-right: 2rem;
+  border-radius: 0.3rem;
+}
+
+.featuredLocation>div{
+  text-align: left;
+  
+}
+
+.locationName{
+  font-family: Cubano;
+  font-size: 2.5rem;
+  color: #002A3F;
+}
+
+.locationCoordinates{
+  color: #FEC74F;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.selectTripButton{
+  margin-top: 2rem;
+  border: none;
+  background: none;
+  font-family: Cubano;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #002A3F;
+  margin-left: auto;
+}
+
+.selectTripButton:hover{
+  cursor: pointer;
+  color: #012030;
+}
+
+.selectTripButton>img{
+  margin-right: 1rem;
+  transition: all 0.2s;
+  width: 2rem;
+  position: relative;
+}
+
+.selectTripButton:hover>img{
+  margin-right: 0rem;
+}
