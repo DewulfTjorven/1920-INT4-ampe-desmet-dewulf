@@ -19,9 +19,9 @@ const Nav = () => {
               Home
           </NavLink><div className={style.line}></div>
             </li>
-            <li><NavLink className={style.nav__item__link} to={ROUTES.home}>
+            <li><Link className={style.nav__item__link} to="#travel">
               Travel
-          </NavLink>
+          </Link>
             </li>
             <li><Link className={style.nav__item__link} to="#map">
               Map

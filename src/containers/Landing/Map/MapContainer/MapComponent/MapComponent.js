@@ -17,7 +17,7 @@ class MapComponent extends Component {
       height: "100vh",
       latitude: 42.430472,
       longitude: -123.334102,
-      zoom: 16
+      zoom: 12
     },
     userLocation: {}
   }
@@ -33,7 +33,7 @@ class MapComponent extends Component {
             width: "100vw",
             latitude: position.coords.latitude,
             longitude: position.coords.longitude,
-            zoom: 11
+            zoom: 12
         }
         this.setState({
             viewport: newViewport,

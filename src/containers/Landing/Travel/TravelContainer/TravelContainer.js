@@ -15,7 +15,7 @@ import style from "./TravelContainer.module.css";
 
 const TravelContainer = () => {
   return (
-    <div className={style.container}>
+    <div className={style.container} id="travel">
       <div className={style.cards}>
           <div className={style.card__one}>
             <Card1 />

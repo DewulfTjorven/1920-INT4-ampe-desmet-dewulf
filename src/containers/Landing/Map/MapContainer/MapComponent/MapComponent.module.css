@@ -6,6 +6,7 @@
   font-family: Cubano, Arial, Helvetica, sans-serif;
   color: #214557;
   position: absolute;
-  right: 4rem;
+  right: 6rem;
   bottom: 4rem;
+  transform: scale(1.5);
 }
