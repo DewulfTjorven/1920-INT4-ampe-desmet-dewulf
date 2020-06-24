@@ -50,7 +50,7 @@
     grid-template: 5rem 1fr 2fr / 1fr 1fr 1fr;
     grid-gap: 4rem;
     padding-top: 3rem;
-    height: 77vh;
+    height: 73vh;
 }
 
 .dashboard_content__container>section{
@@ -59,6 +59,10 @@
 
 .cardTripOptions{
     grid-row: 2 / span 2; 
+}
+
+.cardTripOptions>div{
+    height: 100%;
 }
 
 .dashboard_featured .subtitle::after{

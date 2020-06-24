@@ -6,7 +6,7 @@ import { ROUTES } from "../../consts";
 import { useStores } from "../../hooks/useStores"
 
 import style from "./ProfileHeading.module.css";
-import largeIcon from "../../img/ui_profile.svg"
+import logoutIcon from "../../img/ui_logout.svg"
 
 const ProfileHeading = (user) => {
   const userItem = user.user;
@@ -23,13 +23,11 @@ const ProfileHeading = (user) => {
   };
 
   return (
-    <Link to="" onClick={handleLogout}>
-      <div className={style.container}>
-        <img className={style.profilePicture} src={userItem.avatar} alt="Profile"></img>
-        <p className={style.profileName}>{userItem.name}</p>
-        <img className={style.largeIcon} src={largeIcon} alt="See more icon"></img>
-      </div>
-    </Link>
+    <div className={style.container}>
+      <img className={style.profilePicture} src={userItem.avatar} alt="Profile"></img>
+      <p className={style.profileName}>{userItem.name}</p>
+      <img className={style.largeIcon} src={logoutIcon} onClick={handleLogout} alt="Logout icon"></img>
+    </div>
   );
 };
 

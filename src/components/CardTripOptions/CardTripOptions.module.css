@@ -1,5 +1,4 @@
 .dashboard_ready{
-    height: 100%;
     background-color: white;
     opacity: 1;
     border-radius: 0.3rem;
@@ -12,7 +11,7 @@
 }
 
 .dashboard_ready>section+section{
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 
 .subtitle{

@@ -35,6 +35,7 @@
     font-family: Cubano;
     font-size: 3.5rem;
     color: #FEC74F;
+    font-weight: 600;
 }
 
 .dasboard_upcoming__countdown_container{
@@ -58,6 +59,10 @@
     padding: 1rem 2rem;
     border-radius: 0.3rem;
     box-shadow: 0px 4px 50px 0px rgba(0,0,0,0.1);
+}
+
+.dasboard_upcoming__countdown_container>p+p{
+    margin-left: 2rem;
 }
 
 .countdown__secondary{

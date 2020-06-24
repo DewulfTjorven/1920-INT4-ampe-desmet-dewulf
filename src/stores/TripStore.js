@@ -25,8 +25,6 @@ class TripStore {
     // Trip owner instellen
     trip.ownerId = this.rootStore.uiStore.currentUser.id;
 
-    const boek = trip.id;
-
     //  Create  trip in Firestore
     const newTripRef = await this.tripService.create(trip);
 

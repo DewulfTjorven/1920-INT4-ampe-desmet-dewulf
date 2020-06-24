@@ -8,10 +8,16 @@ import CreateTrip2Form from "./CreateTrip2Form/CreateTrip2Form"
 import style from "./CreateTrip2Container.module.css";
 
 import { Link } from "react-router-dom";
+import { useStores } from "../../../../hooks/useStores";
 
 
 
 const CreateTrip2Container = (props) => {
+  const { locationStore } = useStores();
+
+  // Locatie ophalen
+  const getLocation = locationStore.getLocationById(props.trip.locationId);
+
   return (
     <div className={style.container}>
       <div className={style.location__container}>
@@ -19,10 +25,9 @@ const CreateTrip2Container = (props) => {
           <img className={style.logo} width="92px" height="64px" src={logo} alt="Spotter logo"></img>
         </Link>
         <div>
-          <p className={style.location}>Barcelona, Spain</p>
+          <p className={style.location}>{getLocation.name}</p>
           <div className={style.coordinates}>
-            <p>52°22'38.155"N</p>
-            <p className={style.coordinate__east}>4°52'14.976"E</p>
+            <p>{getLocation.coordinates}</p>
           </div>
           <div className={style.locationline}></div>
         </div>

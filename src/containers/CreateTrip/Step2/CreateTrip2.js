@@ -10,7 +10,7 @@ import CreateTrip2Container from "./CreatTrip2Container/CreateTrip2Container";
 const CreateTrip2 = (props) => {
   return (
     <div className={style.container}>
-      <CreateTrip2Container trip={props.trip} />
+      <CreateTrip2Container location={props.location} trip={props.trip} />
     </div>
   );
 };

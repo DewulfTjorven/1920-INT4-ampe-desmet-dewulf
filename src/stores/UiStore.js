@@ -24,6 +24,12 @@ class UiStore {
       // Trips ophalen voor ingelogde user
       this.rootStore.tripStore.getTrips();
 
+      // Spots ophalen
+      this.rootStore.locationStore.getAllLocations();
+      console.log(this.rootStore.locationStore.locations);
+
+
+
     } else {
       console.log(`user is uitgelogd`);
       this.rootStore.tripStore.empty();

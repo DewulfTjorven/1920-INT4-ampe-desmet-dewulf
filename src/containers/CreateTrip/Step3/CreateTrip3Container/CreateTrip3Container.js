@@ -14,18 +14,18 @@ import { useStores } from "../../../../hooks/useStores";
 
 
 const CreateTrip3Container = (props) => {
-  const { tripStore } = useStores();
+  const { locationStore } = useStores();
   const history = useHistory();
 
-  const tripId = props.trip.tripId;
+  const tripId = props.trip.newTripId;
 
-  if (tripId) {
-    const tripsjebroer = tripStore.getTripById(tripId);
-    console.log(tripsjebroer);
-  } else {
-    console.log(`geen id`);
+  if (!tripId) {
+    console.log(`Geen id ontvangen`);
     history.push(ROUTES.create2);
   }
+
+  // Locatie ophalen
+  const getLocation = locationStore.getLocationById(props.trip.locationId);
 
 
   return (
@@ -35,10 +35,10 @@ const CreateTrip3Container = (props) => {
           <img className={style.logo} width="92px" height="64px" src={logo} alt="Spotter logo"></img>
         </Link>
         <div>
-          <p className={style.location}>Barcelona, Spain</p>
+          <p className={style.location}>{getLocation.name}</p>
           <div className={style.coordinates}>
-            <p>52°22'38.155"N</p>
-            <p className={style.coordinate__east}>4°52'14.976"E</p>
+            <p>{getLocation.coordinates}</p>
+            <p className={style.coordinate__east}>Something to look forward to.</p>
           </div>
           <div className={style.locationline}></div>
         </div>
@@ -63,7 +63,7 @@ const CreateTrip3Container = (props) => {
         <button className={style.send}>Send</button>
         <div className={style.button__container}>
           <BackButtonCreate route={ROUTES.dashboardHome} cta="Dashboard" />
-          <Link to={ROUTES.dashboardTripDetail.to + tripId} className={`${style.navbar_link} ${style.navbar_link_create}`} to={ROUTES.dashboardTrips}>
+          <Link to={ROUTES.dashboardTripDetail.to + tripId} className={`${style.navbar_link} ${style.navbar_link_create}`}>
             Go to trip
           <img src={uiArrow} width="20px" alt="Arrow icon"></img>
           </Link>

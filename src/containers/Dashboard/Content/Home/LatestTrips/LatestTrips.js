@@ -6,14 +6,14 @@ import { useStores } from "../../../../../hooks/useStores";
 
 import style from "./LatestTrips.module.css";
 
-import LooseButtonRight from "../../../../../components/LooseButton/LooseButtonRight";
 import { ROUTES } from "../../../../../consts";
+import LooseButtonWhite from "../../../../../components/LooseButton/LooseButtonWhite";
 
 
 const LatestTrips = () => {
     const { tripStore } = useStores();
 
-    const trips = tripStore.trips;
+    const trips = tripStore.trips.slice(1, 3);
 
     return (
         <section className={style.dashboard_logtrips}>
@@ -25,7 +25,7 @@ const LatestTrips = () => {
                 ))}
             </div>
 
-            <LooseButtonRight cta="View all" color="white" link={ROUTES.dashboardTrips} />
+            <LooseButtonWhite cta="View all" link={ROUTES.dashboardTrips} />
         </section>
     );
 };
