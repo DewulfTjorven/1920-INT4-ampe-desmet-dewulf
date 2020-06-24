@@ -20,7 +20,7 @@ const LocationCard = (props) => {
   return (
     <div className={style.container} onClick={clickLocation}>
       <img className={style.locationPicture} src={locationPicture} alt="Location"></img>
-      <p className={style.locationName}>{}Jeep</p>
+      <p className={style.locationName}>{location.name}</p>
       <LooseButtonRight cta="View more" />
     </div>
   );

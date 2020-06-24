@@ -10,28 +10,29 @@ import spotIcon from "../../../../../img/icon_spots__blue.svg";
 
 import style from "./MapDetail.module.css";
 import { useStores } from "../../../../../hooks/useStores";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useHistory } from "react-router-dom";
 
 import uiArrow from "../../../../../img/ui_arrow.png";
 import placeholder from "../../../../../img/location_placeholder.jpg";
 
 const MapDetail = (props) => {
-    //const history = useHistory();
+    const history = useHistory();
 
     const ROUTES = props.routes;
 
-    const { locationStore } = useStores();
+    const { locationStore, userStore } = useStores();
 
     // ID ophalen uit url
     const { id } = useParams();
-    console.log(id);
 
     // Locatie ophalen op ID
     const location = locationStore.getLocationById(id);
-    console.log(location);
+
+    // Piloot ophalen voor locatie
+    const getPilot = userStore.getUserById(location.ownerId);
 
     if (!location) {
-        //history.push(ROUTES.dashboardMapLocation)
+        history.push(ROUTES.dashboardMapLocation)
     }
 
 
@@ -41,10 +42,10 @@ const MapDetail = (props) => {
 
             <LooseButton link={ROUTES.dashboardMap} cta="Go back" />
 
-            <h1 className={style.title__hidden}>Trip detail - </h1>
+            <h1 className={style.title__hidden}>Trip detail - {location.name}</h1>
 
-            <p className={style.name}>Hailan</p>
-            <p className={style.coordinates}>52°22'38.155"N     4°52'14.976"E</p>
+            <p className={style.name}>{location.name}</p>
+            <p className={style.coordinates}>{location.coordinates}</p>
 
             <img className={style.locationImage} src={placeholder} alt="Detail location"></img>
 
@@ -52,21 +53,21 @@ const MapDetail = (props) => {
                 <img className={style.smallIcon} src={pilotIcon} alt="pilot icon"></img>
                 <div>
                     <p className={style.locationSpecTitle}>pilot</p>
-                    <p>pilotennaamman</p>
+                    <p>{getPilot.name}</p>
                 </div>
             </div>
             <div className={style.locationSpecContainer}>
                 <img src={areaIcon} alt="explorable area icon"></img>
                 <div>
                     <p className={style.locationSpecTitle}>Explorable area</p>
-                    <p>25 kilometers</p>
+                    <p>{location.radius} kilometers</p>
                 </div>
             </div>
             <div className={style.locationSpecContainer}>
                 <img src={spotIcon} alt="spots in area icon"></img>
                 <div>
                     <p className={style.locationSpecTitle}>Spots in this area</p>
-                    <p>35</p>
+                    <p>{location.spotCount}</p>
                 </div>
             </div>
 

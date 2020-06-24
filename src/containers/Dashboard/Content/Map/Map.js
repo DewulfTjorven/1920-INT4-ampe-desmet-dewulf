@@ -36,7 +36,7 @@ const Map = (props) => {
                         <Route exact path={ROUTES.dashboardMap}>
                             <Redirect to={ROUTES.dashboardMapLocation} />
                         </Route>
-                        <Route exact path={ROUTES.dashboardMapDetail}>
+                        <Route exact path={ROUTES.dashboardMapDetail.path}>
                             <MapDetail locations={locationStore.locations} routes={ROUTES} />
                         </Route>
                         <Route exact path={ROUTES.dashboardMapLocation}>
