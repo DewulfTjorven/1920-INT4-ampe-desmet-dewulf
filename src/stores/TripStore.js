@@ -40,7 +40,10 @@ class TripStore {
   getTripById = id => this.trips.find(trip => trip.id === id);
 
   addTrip = trip => {
-    this.trips.push(trip);
+    let tripExist = this.trips.findIndex(item => item.id === trip.id);
+    if (tripExist === -1) {
+      this.trips.push(trip);
+    }
   };
 
   addUser = (user, trip) => {

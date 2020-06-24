@@ -1,21 +1,19 @@
 import React from "react";
 //import { ROUTES } from "../../../../consts";
-import { Link } from "react-router-dom";
+
+import ProfileHeading from "../../../../components/ProfileHeading/ProfileHeading"
 
 import style from "./Certificate.module.css";
 
 import CertificateContainer from "./CertificateContainer/CertificateContainer";
-import arrow from "../../../../img/arrow_left.png";
 
-const Certificate = () => {
+const Certificate = (props) => {
 
   console.log('Certificate');
 
   return (
     <div className={style.container}>
-      <Link className={style.back}>
-        <img className={style.arrow} src={arrow} alt="Arrow icon"></img>Go back
-      </Link>
+      <ProfileHeading user={props.user} />
       <CertificateContainer />
     </div>
   );

@@ -8,6 +8,7 @@ const ROUTES = {
   dashboardMapLocation: "/dashboard/map/locations",
   dashboardMapDetail: { path: "/dashboard/map/detail/:id", to: "/dashboard/map/detail/" },
   dashboardCockpit: "/dashboard/cockpit",
+  dashboardCertificate: "/dashboard/certificate",
   create: "/createtrip",
   createLocation: { path: "/createtrip/location/:id", to: "/createtrip/location/" },
   create1: "/createtrip/options",
@@ -16,8 +17,7 @@ const ROUTES = {
   login: "/login",
   register: "/register",
   registerPilot: "/registerpilot",
-  dashboardProfile: { path: "/dashboard/profile", to: "/dashboard/profile" },
-  dashboardCertificate: "/dashboard/certificate",
+  dashboardProfile: { path: "/dashboard/profile", to: "/dashboard/profile" }
 };
 
 export { ROUTES };

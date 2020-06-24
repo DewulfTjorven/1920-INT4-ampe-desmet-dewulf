@@ -12,7 +12,7 @@ const Cockpit = (props) => {
     <div className={style.container}>
       <h2 className={style.hidden}>Pilot Cockpit</h2>
       <div className={style.header}>
-        <p className={style.title}>Ready to <span className={style.title__highlight}>fly</span>, Jhiun?</p>
+        <p className={style.title}>Ready to <span className={style.title__highlight}>fly</span>, {currentUser.name}?</p>
         <div className={style.line}></div>
       </div>
       <ProfileHeading user={currentUser} />
