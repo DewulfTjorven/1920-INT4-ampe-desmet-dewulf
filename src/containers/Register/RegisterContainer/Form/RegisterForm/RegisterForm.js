@@ -30,7 +30,8 @@ const RegisterForm = () => {
       surName: surName,
       store: userStore,
       email: email,
-      password: password
+      password: password,
+      isPilot: "false"
     });
 
     const result = await uiStore.registerUser(user);

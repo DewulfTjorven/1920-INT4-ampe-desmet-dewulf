@@ -40,7 +40,7 @@ const Card1 = () => {
       <div className={style.buttons}>
         <ul>
           <li>
-            <SecButton cta="Create an account" />
+            <SecButton link={ROUTES.dashboardHome} cta="Create an accountt" />
           </li>
           <li className={style.signin}>
             <NavLink className={style.signin__link} to={ROUTES.login}>

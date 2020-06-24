@@ -41,7 +41,8 @@ const userConverter = {
       userId: user.id,
       name: user.name,
       avatar: user.avatar,
-      email: user.email
+      email: user.email,
+      isPilot: user.isPilot
     }
   },
   fromFirestore: function (snapshot, options) {
@@ -50,7 +51,8 @@ const userConverter = {
       name: data.name,
       email: data.email,
       avatar: data.avatar,
-      id: data.userId
+      id: data.userId,
+      isPilot: data.isPilot
     })
   }
 }

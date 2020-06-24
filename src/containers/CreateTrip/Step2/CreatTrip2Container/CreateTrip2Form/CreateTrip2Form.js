@@ -10,7 +10,7 @@ import Trip from "../../../../../models/Trip";
 import { useStores } from "../../../../../hooks/useStores";
 
 const CreateTrip2Form = (props) => {
-  const { tripStore, userStore } = useStores();
+  const { tripStore, userStore, uiStore } = useStores();
 
   const history = useHistory();
 
@@ -36,7 +36,7 @@ const CreateTrip2Form = (props) => {
         date: formData.date,
         store: tripStore,
         pilotId: "9969c1fc-0f51-3d3f-b687-d0835a081078",
-        ownerId: "9969c1fc-0f51-3d3f-b687-d0835a081078"
+        ownerId: uiStore.currentUser.id
       });
 
       // Submit trip hardcode naar store

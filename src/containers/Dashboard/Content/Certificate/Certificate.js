@@ -8,6 +8,9 @@ import CertificateContainer from "./CertificateContainer/CertificateContainer";
 import arrow from "../../../../img/arrow_left.png";
 
 const Certificate = () => {
+
+  console.log('Certificate');
+
   return (
     <div className={style.container}>
       <Link className={style.back}>

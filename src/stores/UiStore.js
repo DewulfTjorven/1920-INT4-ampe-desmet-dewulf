@@ -55,7 +55,8 @@ class UiStore {
       name: result.displayName,
       avatar: result.photoURL,
       store: this.rootStore.userStore,
-      email: result.email
+      email: result.email,
+      isPilot: result.isPilot
     })
     if (result) {
       //User toevoegen aan user collectie

@@ -4,10 +4,11 @@ import React from "react";
 
 
 import style from "./SecButton.module.css";
+import { Link } from "react-router-dom";
 
 const SecButton = (props) => {
   return (
-    <button className={style.secbutton}>{props.cta}</button>
+    <Link to={props.link} className={style.secbutton}>{props.cta}</Link>
   );
 };
 
