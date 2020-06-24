@@ -9,7 +9,7 @@
 }
 
 .welcome_back{
-    font-family: Cubano;
+    font-family: Cubano, Arial, Helvetica, sans-serif;
     font-size: 2.5rem;
     color: #002A3F;
     margin-top: 5rem;
@@ -20,7 +20,7 @@
 }
 
 .ready{
-    font-family: Cubano;
+    font-family: Cubano,  Arial, Helvetica, sans-serif;
     font-size: 5rem;
     color: #002A3F;
 }

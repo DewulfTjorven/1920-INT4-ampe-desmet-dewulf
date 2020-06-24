@@ -7,14 +7,14 @@
 }
 
 .tripName{
-    font-family: Cubano;
+    font-family: Cubano, Arial, Helvetica, sans-serif;
     font-size: 5rem;
     color: #002A3F;
     margin-top: 2.5rem;
 }
 
 .subtitle{
-    font-family: Cubano;
+    font-family: Cubano, Arial, Helvetica, sans-serif;
     font-size: 3rem;
     color: #002A3F;
 }

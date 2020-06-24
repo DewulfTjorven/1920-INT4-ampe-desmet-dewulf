@@ -4,7 +4,7 @@
    flex-direction: column;
    align-items: center;
    padding: 1.5rem;
-   font-family: Cubano;
+   font-family: Cubano, Arial, Helvetica, sans-serif;
    font-size: 2rem;
    transition: all 0.2s;
    border: none;

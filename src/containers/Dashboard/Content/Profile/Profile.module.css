@@ -2,7 +2,7 @@
     width: 75%;
     height: 100vh;
     margin: 0 auto;
-    font-family: Avenir;
+    font-family: Avenir, Arial, Helvetica, sans-serif;
 }
 
 .title__hidden{
@@ -10,14 +10,14 @@
 }
 
 .welcome_back{
-    font-family: Cubano;
+    font-family: Cubano, Arial, Helvetica, sans-serif;
     font-size: 2.5rem;
     color: #002A3F;
     margin-top: 6rem;
 }
 
 .ready{
-    font-family: Cubano;
+    font-family: Cubano, Arial, Helvetica, sans-serif;
     font-size: 5rem;
     color: #FEC74F;
 }
@@ -32,7 +32,7 @@
 }
 
 .subtitle{
-    font-family: Cubano;
+    font-family: Cubano, Arial, Helvetica, sans-serif;
     font-size: 3rem;
     color: #002A3F;
 }
@@ -57,7 +57,7 @@
     margin-top: 3rem;
     margin-bottom: 1rem;
 
-    font-family: Cubano;
+    font-family: Cubano, Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
     color: #002A3F;
 }
