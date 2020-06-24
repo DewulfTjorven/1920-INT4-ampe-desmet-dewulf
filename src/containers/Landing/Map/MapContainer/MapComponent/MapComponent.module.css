@@ -1,0 +1,11 @@
+.button{
+  padding: 1.2rem;
+  background-color: #FEC74F;
+  border-radius: .2rem;
+  border: none;
+  font-family: Cubano, Arial, Helvetica, sans-serif;
+  color: #214557;
+  position: absolute;
+  right: 4rem;
+  bottom: 4rem;
+}

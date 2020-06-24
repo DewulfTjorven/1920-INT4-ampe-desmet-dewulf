@@ -46,7 +46,6 @@ class MapComponent extends Component {
   render() {
     return (
       <div id="map">
-      <button onClick={this.setUserLocation}>View spots close to you</button>
       <ReactMapGL 
         scrollZoom={false} 
         //doubleClickZoom={false}
@@ -56,6 +55,9 @@ class MapComponent extends Component {
         mapStyle="mapbox://styles/tjorven01/ckbs7ant86y7s1ipiha9kzux5"
         onViewportChange={viewport => this.setState({viewport})}
         mapboxApiAccessToken={MAPBOX_TOKEN}> 
+
+        <button className={style.button} onClick={this.setUserLocation}>View spots close to you</button>
+
 
         {Object.keys(this.state.userLocation).length !== 0 ? (
           <Marker
