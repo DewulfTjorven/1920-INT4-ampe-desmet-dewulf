@@ -3,7 +3,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { HashLink as Link } from 'react-router-hash-link';
 import { ROUTES } from "../../../../consts";
-import Button from "../../../../components/Button/Button";
 
 
 
@@ -36,7 +35,7 @@ const Nav = () => {
         <div className={style.nav__item}>
           <NavLink className={style.signin} to={ROUTES.login}>Sign in</NavLink>
           <p className={style.signin__or}>or</p>
-          <NavLink to={ROUTES.register}><Button cta="Create an account" /></NavLink>
+          <NavLink className={style.register__button} to={ROUTES.register}>Create an account</NavLink>
         </div>
       </div>
     </div >

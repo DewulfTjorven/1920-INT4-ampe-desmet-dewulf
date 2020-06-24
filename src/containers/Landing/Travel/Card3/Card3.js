@@ -1,9 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { ROUTES } from "../../../../consts";
-// import { ROUTES } from "../../consts";
-import SecButton from "../../../../components/SecButton/SecButton";
-
+import { Link } from "react-router-dom";
 
 
 import style from "./Card3.module.css";
@@ -40,7 +38,7 @@ const Card1 = () => {
       <div className={style.buttons}>
         <ul>
           <li>
-            <SecButton cta="Create an account" />
+            <Link className={style.pilot__button} to={ROUTES.registerPilot}>Create an account</Link>
           </li>
           <li className={style.signin}>
             <NavLink className={style.signin__link} to={ROUTES.login}>
