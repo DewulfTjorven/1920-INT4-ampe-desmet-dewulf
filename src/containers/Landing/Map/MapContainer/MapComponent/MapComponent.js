@@ -46,7 +46,7 @@ class MapComponent extends Component {
   render() {
     return (
       <>
-      <button onClick={this.setUserLocation}>My location</button>
+      <button onClick={this.setUserLocation}>View spots close to you</button>
       <ReactMapGL 
         scrollZoom={false} 
         //doubleClickZoom={false}
